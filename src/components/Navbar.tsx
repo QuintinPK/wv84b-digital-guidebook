@@ -59,7 +59,7 @@ const Navbar = () => {
             <ul className="flex items-center space-x-1">
               <NavItem to="/" icon={<Home size={18} />} label="Home" />
               <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" />
-              <NavItem to="/checkin" icon={<Clock size={18} />} label="Check In" />
+              <NavItem to="/checkin" icon={<Clock size={18} />} label="Info" />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" />
             </ul>
           </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-2">
               <NavItem to="/" icon={<Home size={18} />} label="Home" isMobile />
               <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" isMobile />
-              <NavItem to="/checkin" icon={<Clock size={18} />} label="Check In" isMobile />
+              <NavItem to="/checkin" icon={<Clock size={18} />} label="Info" isMobile />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" isMobile />
             </ul>
           </div>
