@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -67,7 +68,7 @@ const Index = () => {
                 location="Malibu, California"
                 bedrooms={3}
                 capacity={6}
-                imageUrl="https://images.unsplash.com/photo-1721322800607-8c38375eef04"
+                imageUrl="/lovable-uploads/5b01f351-6428-4dc0-ad0e-e06123631e3b.png"
               />
             </div>
             
