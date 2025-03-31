@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
@@ -7,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { 
-  Phone, 
+  PhoneCall, 
   Mail, 
   MessageCircle, 
   MapPin, 
@@ -67,7 +66,7 @@ const Contact = () => {
           <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-8">
             <div className="p-6 sm:p-8">
               <div className="flex items-center mb-4">
-                <Phone size={24} className="text-vacation-600 mr-3" />
+                <PhoneCall size={24} className="text-vacation-600 mr-3" />
                 <h1 className="text-3xl font-semibold text-gray-900">Contact Information</h1>
               </div>
               <p className="text-lg text-gray-600 mb-6">
@@ -82,11 +81,11 @@ const Contact = () => {
               <GuidebookSection
                 title="Host Contact"
                 description="Reach out anytime for assistance"
-                icon={<Phone size={20} />}
+                icon={<PhoneCall size={20} />}
               >
                 <div className="space-y-4 mt-2">
                   <div className="flex items-start p-4 rounded-lg border border-gray-100">
-                    <Phone size={20} className="text-vacation-600 mr-3 mt-1" />
+                    <PhoneCall size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Phone Number</h3>
                       <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>

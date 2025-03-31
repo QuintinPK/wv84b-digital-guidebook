@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,14 +9,15 @@ import {
   Coffee, 
   Tv, 
   UtensilsCrossed,
-  Parking, 
+  Car,
   Bath, 
   Waves, 
   ChevronRight, 
   Info,
   Utensils,
   MapPin,
-  Clock
+  Clock,
+  PhoneCall
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -76,7 +76,7 @@ const Index = () => {
               <AmenityIcon icon={<Coffee size={24} />} label="Coffee Machine" />
               <AmenityIcon icon={<Tv size={24} />} label="Smart TV" />
               <AmenityIcon icon={<UtensilsCrossed size={24} />} label="Full Kitchen" />
-              <AmenityIcon icon={<Parking size={24} />} label="Free Parking" />
+              <AmenityIcon icon={<Car size={24} />} label="Free Parking" />
               <AmenityIcon icon={<Bath size={24} />} label="Jacuzzi" />
             </div>
           </div>
@@ -235,7 +235,7 @@ const Index = () => {
                 <GuidebookSection 
                   title="Contact Information" 
                   description="Need help? We're here for you"
-                  icon={<Phone size={24} />}
+                  icon={<PhoneCall size={24} />}
                 >
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
