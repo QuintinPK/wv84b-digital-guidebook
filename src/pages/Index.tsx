@@ -67,7 +67,7 @@ const Index = () => {
                 location="Malibu, California"
                 bedrooms={3}
                 capacity={6}
-                imageUrl="/lovable-uploads/5b01f351-6428-4dc0-ad0e-e06123631e3b.png"
+                imageUrl="/lovable-uploads/ade981c2-b157-4f85-b799-e243dd727098.png"
               />
             </div>
             
