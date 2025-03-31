@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -32,7 +31,7 @@ const Index = () => {
         <section className="relative h-[70vh] bg-gray-900">
           <div className="absolute inset-0 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
+              src="/lovable-uploads/5b01f351-6428-4dc0-ad0e-e06123631e3b.png" 
               alt="Vacation rental" 
               className="h-full w-full object-cover opacity-70"
             />
