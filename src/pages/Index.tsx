@@ -1,23 +1,16 @@
+
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PropertyCard from "@/components/PropertyCard";
 import GuidebookSection from "@/components/GuidebookSection";
-import AmenityIcon from "@/components/AmenityIcon";
 import { 
-  Wifi, 
-  Coffee, 
-  Tv, 
-  UtensilsCrossed,
-  Car,
-  Bath, 
-  Waves, 
   ChevronRight, 
   Info,
   Utensils,
   MapPin,
   Clock,
-  PhoneCall
+  PhoneCall,
+  Waves
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -52,32 +45,6 @@ const Index = () => {
               <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
                 Contact Host
               </Button>
-            </div>
-          </div>
-        </section>
-        
-        {/* Property Information */}
-        <section className="py-12 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">Our Beautiful Vacation Home</h2>
-            
-            <div className="mb-10">
-              <PropertyCard 
-                name="Ocean View Villa"
-                location="Malibu, California"
-                bedrooms={3}
-                capacity={6}
-                imageUrl="/lovable-uploads/ade981c2-b157-4f85-b799-e243dd727098.png"
-              />
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-10">
-              <AmenityIcon icon={<Wifi size={24} />} label="Free WiFi" />
-              <AmenityIcon icon={<Coffee size={24} />} label="Coffee Machine" />
-              <AmenityIcon icon={<Tv size={24} />} label="Smart TV" />
-              <AmenityIcon icon={<UtensilsCrossed size={24} />} label="Full Kitchen" />
-              <AmenityIcon icon={<Car size={24} />} label="Free Parking" />
-              <AmenityIcon icon={<Bath size={24} />} label="Jacuzzi" />
             </div>
           </div>
         </section>
