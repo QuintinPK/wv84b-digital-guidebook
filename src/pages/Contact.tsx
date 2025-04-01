@@ -127,7 +127,7 @@ const Contact = () => {
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
                     <span className="font-medium text-gray-900">Local Police (Non-Emergency)</span>
-                    <span className="text-gray-700">(555) 234-5678</span>
+                    <span className="text-gray-700">717-8000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
