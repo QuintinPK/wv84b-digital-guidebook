@@ -40,6 +40,12 @@ const CheckIn = () => {
               <p className="text-lg text-gray-600 mb-6">
                 Everything you need to know for a smooth arrival and departure from our vacation rental.
                 Please read this information carefully before your stay.
+                <br>
+                  We love to welcome our guests personally whenever possible! If you’d like an in-person 
+                  greeting when you arrive, just let us know your estimated time of arrival. We’ll be happy to meet you, 
+                  give you a quick tour, and share our favorite local tips to make your stay unforgettable. 
+                  If you prefer a more self-guided check-in, that’s no problem — we’ve got a seamless self-check-in process, too!
+                </br>
               </p>
             </div>
           </div>
@@ -53,7 +59,7 @@ const CheckIn = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Check-In Time</h3>
-                  <p className="text-gray-600">3:00 PM - 10:00 PM</p>
+                  <p className="text-gray-600">3:00 PM - 12:00 PM</p>
                   <p className="text-sm text-gray-500 mt-1">
                     Early check-in may be available with prior arrangement.
                   </p>
@@ -64,7 +70,7 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Self Check-In Process</h3>
                   <ol className="list-decimal ml-5 space-y-2 text-gray-600">
-                    <li>Approach the front door of the property.</li>
+                    <li>If the gate is closed upon arrival, enter code 123456#.</li>
                     <li>Enter code <span className="font-semibold">4286</span> on the keypad lockbox.</li>
                     <li>Remove the key from the lockbox.</li>
                     <li>Use the key to unlock the front door.</li>
@@ -77,8 +83,8 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Address & Directions</h3>
                   <p className="text-gray-600 mb-2">
-                    1234 Ocean View Dr<br />
-                    Malibu, CA 90265
+                    Kaya Watervillas 84<br />
+                    Bonaire
                   </p>
                   <Button 
                     size="sm" 
