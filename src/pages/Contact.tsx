@@ -105,7 +105,7 @@ const Contact = () => {
                   <div className="flex items-start p-4 rounded-lg border border-gray-100">
                     <MessageCircle size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
-                      <h3 className="font-medium text-gray-800">Text Message</h3>
+                      <h3 className="font-medium text-gray-800">Text Message/WhatsApp</h3>
                       <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
                       <p className="text-sm text-gray-500 mt-1">Quickest way to reach us for non-emergencies</p>
                     </div>
@@ -126,18 +126,18 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
-                    <span className="font-medium text-gray-900">Local Police (Non-Emergency)</span>
+                    <span className="font-medium text-gray-900">Police (Non-Emergency)</span>
                     <span className="text-gray-700">717-8000</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
-                    <span className="font-medium text-gray-900">Nearest Hospital</span>
-                    <span className="text-gray-700">Malibu Urgent Care</span>
+                    <span className="font-medium text-gray-900">Ambulance (direct)</span>
+                    <span className="text-gray-700">912</span>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
-                    <span className="font-medium text-gray-900">Property Manager</span>
-                    <span className="text-gray-700">(555) 345-6789</span>
+                    <span className="font-medium text-gray-900">Coast guard</span>
+                    <span className="text-gray-700">913</span>
                   </div>
                 </div>
                 
