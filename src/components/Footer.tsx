@@ -1,4 +1,4 @@
-asi
+
 import { Heart, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -66,17 +66,17 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-600">
-              Email: contact@seasideserenitybonaire.com<br />
-              Phone: +599 795 1826
+              Email: contact@vacationguide.com<br />
+              Phone: +1 (123) 456-7890
             </p>
           </div>
         </div>
         
         <div className="mt-8 pt-8 border-t text-center text-gray-500 text-sm">
           <p className="flex items-center justify-center">
-            Made with <Heart size={16} className="mx-1 text-vacation-500" /> by Seaside Serenity Bonaire
+            Made with <Heart size={16} className="mx-1 text-vacation-500" /> by Vacation Guide
           </p>
-          <p className="mt-1">All rights reserved.</p>
+          <p className="mt-1">© {new Date().getFullYear()} Vacation Guide. All rights reserved.</p>
         </div>
       </div>
     </footer>
