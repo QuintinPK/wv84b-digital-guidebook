@@ -41,7 +41,7 @@ const CheckIn = () => {
                 Everything you need to know for a smooth arrival and departure from our vacation rental.
                 Please read this information carefully before your stay.
                 
-                <br />
+                <br /><br />
                 
                 We love to welcome our guests personally whenever possible! If you’d like an in-person 
                 greeting when you arrive, just let us know your estimated time of arrival. We’ll be happy to meet you, 
