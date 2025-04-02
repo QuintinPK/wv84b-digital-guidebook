@@ -162,6 +162,7 @@ const CheckIn = () => {
             icon={<ShieldAlert size={20} />}
           >
             <div className="grid md:grid-cols-3 gap-6">
+              
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Wifi size={20} className="text-vacation-600 mr-2" />
@@ -173,12 +174,11 @@ const CheckIn = () => {
               
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
-                  <Thermometer size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Mindful A/C Use</h3>
+                  <Wifi size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
                 </div>
-                <p className="text-gray-600">
-                  We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s). 
-                </p>
+                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
+                <p className="text-gray-600">Password: BeachLife2024</p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
