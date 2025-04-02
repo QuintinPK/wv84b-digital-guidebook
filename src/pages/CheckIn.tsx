@@ -22,7 +22,7 @@ const CheckIn = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-grow bg-gray-50 py-10">
+      <main className="flex-grow bg-gray-50 py-10 pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
             <Link to="/" className="inline-flex items-center text-vacation-600 hover:text-vacation-700">
@@ -30,6 +30,60 @@ const CheckIn = () => {
               Back to Guidebook
             </Link>
           </div>
+          
+          {/* First Thing Upon Arrival Section - Moved above the Check-In & Check-Out Information */}
+          <GuidebookSection
+            title="First Thing Upon Arrival"
+            description="Important information to get you settled in"
+            icon={<ShieldAlert size={20} />}
+            className="mb-8"
+          >
+            <div className="grid md:grid-cols-3 gap-6">
+              
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <Thermometer size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Community gate</h3>
+                </div>
+                <p className="text-gray-600">
+                  Gate closed? Use 123456# on the keypad, found on a pole to the left.
+                   
+                </p>
+              </div>
+              
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <Wifi size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
+                </div>
+                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
+                <p className="text-gray-600">Password: BeachLife2024</p>
+              </div>
+              
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <CarFront size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Parking Information</h3>
+                </div>
+                <p className="text-gray-600">
+                  Free parking is available right in front. Please park in front of the apartment to ensure space for others.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-6 bg-vacation-50 rounded-lg p-4">
+              <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
+              <ul className="list-disc ml-5 space-y-1 text-gray-600">
+                <li>Mindful A/C Use: Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
+                <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
+                <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
+                <li>Pets are not permitted unless specifically arranged prior to booking.</li>
+                <li>Maximum occupancy is 4 guests. Unauthorized guests are not allowed.</li>
+                <li>Towels are for use within the villa. Please do not take towels to the beach. Beach towels are available.</li>
+                <li>Subletting is not allowed. The villa may only be used by the registered guests.</li>
+              </ul>
+            </div>
+          </GuidebookSection>
           
           <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-8">
             <div className="p-6 sm:p-8">
@@ -157,58 +211,6 @@ const CheckIn = () => {
               </div>
             </GuidebookSection>
           </div>
-          
-          <GuidebookSection
-            title="First Thing Upon Arrival"
-            description="Important information to get you settled in"
-            icon={<ShieldAlert size={20} />}
-          >
-            <div className="grid md:grid-cols-3 gap-6">
-              
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <Thermometer size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Community gate</h3>
-                </div>
-                <p className="text-gray-600">
-                  Gate closed? Use 123456# on the keypad, found on a pole to the left.
-                   
-                </p>
-              </div>
-              
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <Wifi size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
-                </div>
-                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
-                <p className="text-gray-600">Password: BeachLife2024</p>
-              </div>
-              
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <CarFront size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Parking Information</h3>
-                </div>
-                <p className="text-gray-600">
-                  Free parking is available right in front. Please park in front of the apartment to ensure space for others.
-                </p>
-              </div>
-            </div>
-            
-            <div className="mt-6 bg-vacation-50 rounded-lg p-4">
-              <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
-              <ul className="list-disc ml-5 space-y-1 text-gray-600">
-                <li>Mindful A/C Use: Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
-                <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
-                <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
-                <li>Pets are not permitted unless specifically arranged prior to booking.</li>
-                <li>Maximum occupancy is 4 guests. Unauthorized guests are not allowed.</li>
-                <li>Towels are for use within the villa. Please do not take towels to the beach. Beach towels are available.</li>
-                <li>Subletting is not allowed. The villa may only be used by the registered guests.</li>
-              </ul>
-            </div>
-          </GuidebookSection>
         </div>
       </main>
       
