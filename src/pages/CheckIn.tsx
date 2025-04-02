@@ -161,16 +161,8 @@ const CheckIn = () => {
             description="Important information to get you settled in"
             icon={<ShieldAlert size={20} />}
           >
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <Wifi size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
-                </div>
-                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
-                <p className="text-gray-600">Password: BeachLife2024</p>
-              </div>
-              
+            <div className="grid md:grid-cols-3 gap-6">
+                            
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Thermometer size={20} className="text-vacation-600 mr-2" />
@@ -186,7 +178,7 @@ const CheckIn = () => {
                   <Wifi size={20} className="text-vacation-600 mr-2" />
                   <h3 className="font-medium text-gray-800">WiFi Information</h3>
                 </div>
-                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
+                <p className="text-gray-600 mb-2">Network: WVOchenti4</p>
                 <p className="text-gray-600">Password: BeachLife2024</p>
               </div>
               
