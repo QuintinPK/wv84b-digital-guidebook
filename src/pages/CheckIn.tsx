@@ -121,7 +121,7 @@ const CheckIn = () => {
                     At check-out, you don’t need to worry about cleaning — we’ll take care of everything! Just make sure to check for any personal items, and we wish you a safe journey!
                   </p>
                   <p>However, feel free to:</p>
-                <ul>
+                <ul className="list-disc ml-5 space-y-2 text-gray-600">
                     <li>Leave all used towels in the bathroom.</li>
                     <li>Load and start the dishwasher before you leave.</li>
                     <li>Take any trash to the designated bins outside.</li>
