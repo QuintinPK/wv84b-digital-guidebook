@@ -23,7 +23,7 @@ const Index = () => {
         <section className="relative h-[70vh] bg-gray-900">
           <div className="absolute inset-0 overflow-hidden">
             <img 
-              src="/lovable-uploads/5b01f351-6428-4dc0-ad0e-e06123631e3b.png" 
+              src="/lovable-uploads/ade981c2-b157-4f85-b799-e243dd727098.png" 
               alt="Vacation rental" 
               className="h-full w-full object-cover opacity-70"
             />
