@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, MapPin, Clock, Phone, Info, BookOpen } from "lucide-react";
+import { Menu, X, Home, MapPin, Clock, Phone, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -59,8 +59,7 @@ const Navbar = () => {
             <ul className="flex items-center space-x-1">
               <NavItem to="/" icon={<Home size={18} />} label="Home" />
               <NavItem to="/checkin" icon={<Info size={18} />} label="Info" />
-              <NavItem to="/house-manual" icon={<BookOpen size={18} />} label="House Manual" />
-              <NavItem to="/explore" icon={<MapPin size={18} />} label="Explore" />
+              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" />
             </ul>
           </div>
@@ -85,8 +84,7 @@ const Navbar = () => {
             <ul className="flex flex-col space-y-2">
               <NavItem to="/" icon={<Home size={18} />} label="Home" isMobile />
               <NavItem to="/checkin" icon={<Info size={18} />} label="Info" isMobile />
-              <NavItem to="/house-manual" icon={<BookOpen size={18} />} label="House Manual" isMobile />
-              <NavItem to="/explore" icon={<MapPin size={18} />} label="Explore" isMobile />
+              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" isMobile />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" isMobile />
             </ul>
           </div>

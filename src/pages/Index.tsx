@@ -6,10 +6,11 @@ import GuidebookSection from "@/components/GuidebookSection";
 import { 
   ChevronRight, 
   Info,
-  BookOpen,
+  Utensils,
   MapPin,
   Clock,
-  PhoneCall
+  PhoneCall,
+  Waves
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -85,10 +86,10 @@ const Index = () => {
                 </GuidebookSection>
               </Link>
               
-              <Link to="/explore">
+              <Link to="/attractions">
                 <GuidebookSection 
-                  title="Explore" 
-                  description="Discover attractions, dining, and beaches"
+                  title="Local Attractions" 
+                  description="Discover the best places around"
                   icon={<MapPin size={24} />}
                 >
                   <ul className="space-y-2 text-gray-600">
@@ -98,11 +99,11 @@ const Index = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Local dining recommendations
+                      Hiking trails with stunning views
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Historic downtown and hiking trails
+                      Historic downtown shopping district
                     </li>
                   </ul>
                   <div className="mt-4">
@@ -113,11 +114,11 @@ const Index = () => {
                 </GuidebookSection>
               </Link>
               
-              <Link to="/house-manual">
+              <Link to="/">
                 <GuidebookSection 
                   title="House Manual" 
                   description="Everything you need to know about the property"
-                  icon={<BookOpen size={24} />}
+                  icon={<Info size={24} />}
                 >
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
@@ -131,6 +132,62 @@ const Index = () => {
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
                       Appliance guides and house rules
+                    </li>
+                  </ul>
+                  <div className="mt-4">
+                    <Button variant="link" className="text-vacation-600 p-0 h-auto flex items-center">
+                      Read More <ChevronRight size={16} className="ml-1" />
+                    </Button>
+                  </div>
+                </GuidebookSection>
+              </Link>
+              
+              <Link to="/">
+                <GuidebookSection 
+                  title="Dining Recommendations" 
+                  description="Best places to eat nearby"
+                  icon={<Utensils size={24} />}
+                >
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Seafood restaurants with ocean views
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Local farm-to-table experiences
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Casual cafés and breakfast spots
+                    </li>
+                  </ul>
+                  <div className="mt-4">
+                    <Button variant="link" className="text-vacation-600 p-0 h-auto flex items-center">
+                      Read More <ChevronRight size={16} className="ml-1" />
+                    </Button>
+                  </div>
+                </GuidebookSection>
+              </Link>
+              
+              <Link to="/">
+                <GuidebookSection 
+                  title="Beach Guide" 
+                  description="Make the most of our beautiful coastline"
+                  icon={<Waves size={24} />}
+                >
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Beach access and parking information
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Best times for swimming and surfing
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Beach equipment available at the house
                     </li>
                   </ul>
                   <div className="mt-4">
