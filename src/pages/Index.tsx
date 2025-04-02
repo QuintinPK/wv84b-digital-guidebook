@@ -27,7 +27,7 @@ const Index = () => {
               alt="Vacation rental" 
               className="h-full w-full object-cover opacity-70"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-black/10" />
           </div>
           
           <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
