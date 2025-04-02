@@ -91,7 +91,7 @@ const CheckIn = () => {
                   
                   <Button 
                     size="sm" 
-                    className="bg-vacation-600 hover:bg-vacation-700 text-white mb-2"
+                    className="bg-vacation-600 hover:bg-vacation-700 text-white mb-4"
                     onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
@@ -103,7 +103,7 @@ const CheckIn = () => {
                     onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
-                    Route from the airport
+                    Route from the airport1
                   </Button>
                 </div>
               </div>
