@@ -165,11 +165,13 @@ const CheckIn = () => {
               
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
-                  <Wifi size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
+                  <Thermometer size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Community gate</h3>
                 </div>
-                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
-                <p className="text-gray-600">Password: BeachLife2024</p>
+                <p className="text-gray-600">
+                  Gate closed? Use 123456# on the keypad, found on a pole to the left.
+                   
+                </p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
