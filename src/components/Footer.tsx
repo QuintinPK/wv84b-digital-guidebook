@@ -74,7 +74,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t text-center text-gray-500 text-sm">
           <p className="flex items-center justify-center">
-            Made with <Heart size={16} className="mx-1 text-vacation-500" /> by Vacation Guide
+            Made with <Heart size={16} className="mx-1 text-vacation-500" /> by Seaside Serenity Villas Bonaire
           </p>
           <p className="mt-1">© {new Date().getFullYear()} Vacation Guide. All rights reserved.</p>
         </div>
