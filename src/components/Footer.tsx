@@ -48,14 +48,14 @@ const Footer = () => {
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
                 aria-label="MessageCircle"
               >
-                <Instagram size={20} />
+                <MessageCircle size={20} />
               </a>
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
                 aria-label="WhatsApp"
               >
-                <Facebook size={20} />
+                <WhatsApp size={20} />
               </a>
               <a 
                 href="#" 
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-600">
-              Email: contact@seasideserenitybonaire.com<br />
+              Email: contact@seasideserenitybonaire2.com<br />
               Phone: +599 795 1826
             </p>
           </div>
