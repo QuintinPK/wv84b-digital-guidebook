@@ -198,6 +198,7 @@ const CheckIn = () => {
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
                 <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
+                <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
                 <li>Maximum occupancy is 4 guests. Unauthorized guests are not allowed.</li>
