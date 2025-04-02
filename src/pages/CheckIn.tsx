@@ -91,9 +91,9 @@ const CheckIn = () => {
                   <Button 
                     size="sm" 
                    className="bg-vacation-600 hover:bg-vacation-700 text-white"
-                    onClick={() => window.open('https://www.google.com/maps?q=12.134833,-68.270444', '_blank')}
+                    onClick={() => window.open('https://www.google.com/maps?q=12.134814,-68.270979', '_blank')}
                   >
-                    <Map size={16} className="mr-2" />
+                    <Map size={10} className="mr-2" />
                     Open in Maps
                   </Button>
                 </div>
