@@ -88,9 +88,10 @@ const CheckIn = () => {
                     Kaya Watervillas 84<br />
                     Bonaire
                   </p>
+                  
                   <Button 
                     size="sm" 
-                   className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                    className="bg-vacation-600 hover:bg-vacation-700 text-white mb-2"
                     onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
@@ -98,7 +99,7 @@ const CheckIn = () => {
                   </Button>
                   <Button 
                     size="sm" 
-                   className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                    className="bg-vacation-600 hover:bg-vacation-700 text-white"
                     onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
