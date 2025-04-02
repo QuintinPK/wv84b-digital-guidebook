@@ -20,7 +20,7 @@ const Index = () => {
       
       <main className="flex-grow">
         {/* Hero section */}
-        <section className="relative h-[55vh] bg-gray-900">
+        <section className="relative h-[70vh] bg-gray-900">
           <div className="absolute inset-0 overflow-hidden">
             <img 
               src="/lovable-uploads/5b01f351-6428-4dc0-ad0e-e06123631e3b.png" 
