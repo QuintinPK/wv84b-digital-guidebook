@@ -58,8 +58,8 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <ul className="flex items-center space-x-1">
               <NavItem to="/" icon={<Home size={18} />} label="Home" />
-              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" />
               <NavItem to="/checkin" icon={<Clock size={18} />} label="Info" />
+              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" />
             </ul>
           </div>
@@ -83,8 +83,8 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
             <ul className="flex flex-col space-y-2">
               <NavItem to="/" icon={<Home size={18} />} label="Home" isMobile />
-              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" isMobile />
               <NavItem to="/checkin" icon={<Clock size={18} />} label="Info" isMobile />
+              <NavItem to="/attractions" icon={<MapPin size={18} />} label="Attractions" isMobile />
               <NavItem to="/contact" icon={<Phone size={18} />} label="Contact" isMobile />
             </ul>
           </div>
