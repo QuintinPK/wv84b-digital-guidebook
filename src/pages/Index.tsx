@@ -38,11 +38,11 @@ const Index = () => {
               Everything you need to know for a perfect stay at our luxury vacation rental.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 animate-fade-in">
-              <Button size="lg" className="bg-vacation-600 hover:bg-vacation-700 text-white">
-                Explore Guidebook
+              <Button asChild size="lg" className="bg-vacation-600 hover:bg-vacation-700 text-white">
+                <Link to="/checkin">Explore Guidebook</Link>
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                Contact Host
+              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
+                <Link to="/contact">Contact Host</Link>
               </Button>
             </div>
           </div>
