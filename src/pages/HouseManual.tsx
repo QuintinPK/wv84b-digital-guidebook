@@ -1,5 +1,6 @@
 
-import { ChevronRight, Wifi, Thermometer, Home, ShowerHead, Coffee } from "lucide-react";
+import { ChevronRight, Wifi, Thermometer, Home, ShowerHead, Coffee, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
@@ -10,7 +11,14 @@ const HouseManual = () => {
       <Navbar />
       
       <main className="flex-grow">
-        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <Link to="/" className="inline-flex items-center text-vacation-600 hover:text-vacation-700">
+              <ArrowLeft size={16} className="mr-2" />
+              Back to Guidebook
+            </Link>
+          </div>
+          
           <div className="text-center mb-12">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">House Manual</h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
