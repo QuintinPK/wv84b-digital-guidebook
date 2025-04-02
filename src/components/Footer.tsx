@@ -66,8 +66,8 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-600">
-              Email: contact@vacationguide.com<br />
-              Phone: +1 (123) 456-7890
+              Email: contact@seasideserenitybonaire.com<br />
+              Phone: +599 795 1826
             </p>
           </div>
         </div>
