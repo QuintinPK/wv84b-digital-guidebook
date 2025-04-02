@@ -161,7 +161,7 @@ const CheckIn = () => {
             description="Important information to get you settled in"
             icon={<ShieldAlert size={20} />}
           >
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Wifi size={20} className="text-vacation-600 mr-2" />
@@ -180,8 +180,7 @@ const CheckIn = () => {
                   If the gate is closed upon arrival, enter code 123456#.. 
                 </p>
               </div>
-
-              <div className="grid md:grid-cols-3 gap-6">
+              
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Wifi size={20} className="text-vacation-600 mr-2" />
