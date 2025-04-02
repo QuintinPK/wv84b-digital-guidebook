@@ -1,5 +1,5 @@
 
-import { Heart, Instagram, Facebook, Twitter, WhatsApp, MessageCircle } from "lucide-react";
+import { Heart, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -46,16 +46,16 @@ const Footer = () => {
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="MessageCircle"
+                aria-label="Instagram"
               >
-                <MessageCircle size={20} />
+                <Instagram size={20} />
               </a>
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="WhatsApp"
+                aria-label="Facebook"
               >
-                <WhatsApp size={20} />
+                <Facebook size={20} />
               </a>
               <a 
                 href="#" 
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-600">
-              Email: contact@seasideserenitybonaire2.com<br />
+              Email: contact@seasideserenitybonaire.com<br />
               Phone: +599 795 1826
             </p>
           </div>
