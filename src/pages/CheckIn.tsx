@@ -40,13 +40,13 @@ const CheckIn = () => {
               <p className="text-lg text-gray-600 mb-6">
                 Everything you need to know for a smooth arrival and departure from our vacation rental.
                 Please read this information carefully before your stay.
-
-                <Separator />
-              
-                  We love to welcome our guests personally whenever possible! If you’d like an in-person 
-                  greeting when you arrive, just let us know your estimated time of arrival. We’ll be happy to meet you, 
-                  give you a quick tour, and share our favorite local tips to make your stay unforgettable. 
-                  If you prefer a more self-guided check-in, that’s no problem — we’ve got a seamless self-check-in process, too!
+                
+                <br />
+                
+                We love to welcome our guests personally whenever possible! If you’d like an in-person 
+                greeting when you arrive, just let us know your estimated time of arrival. We’ll be happy to meet you, 
+                give you a quick tour, and share our favorite local tips to make your stay unforgettable. 
+                If you prefer a more self-guided check-in, that’s no problem — we’ve got a seamless self-check-in process, too!
                 
               </p>
             </div>
