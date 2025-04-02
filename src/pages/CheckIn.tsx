@@ -174,11 +174,21 @@ const CheckIn = () => {
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Thermometer size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Mindful A/C Use</h3>
+                  <h3 className="font-medium text-gray-800">Outside gate</h3>
                 </div>
                 <p className="text-gray-600">
-                  We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s). 
+                  If the gate is closed upon arrival, enter code 123456#.. 
                 </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <Wifi size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
+                </div>
+                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
+                <p className="text-gray-600">Password: BeachLife2024</p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
@@ -195,6 +205,7 @@ const CheckIn = () => {
             <div className="mt-6 bg-vacation-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
+                li>Mindful A/C use - We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s).</li>
                 <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
