@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
               <span className="text-vacation-600 font-semibold text-xl">
-                Vacation Guide
+                Vacation (Home) Guide
               </span>
             </Link>
           </div>
