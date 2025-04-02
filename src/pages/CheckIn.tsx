@@ -109,14 +109,14 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800 mb-1">Check-Out Time</h3>
                   <p className="text-gray-600">11:00 AM</p>
                   <p className="text-sm text-gray-500 mt-1">
-                    Late check-out is subject to availability and may incur additional charges.
+                    Late check-out may result in additional charges.
                   </p>
                 </div>
                 
                 <Separator />
 
                 <div>
-                  <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
+                  <h3 className="font-medium text-gray-800 mb-1">Check-Out Procedure</h3>
                   <p className="text-gray-600 mb-4">
                     At check-out, you don’t need to worry about cleaning — we’ll take care of everything! Just make sure to check for any personal items, and we wish you a safe journey!
                   </p>
@@ -126,29 +126,20 @@ const CheckIn = () => {
                     <li>Load and start the dishwasher before you leave.</li>
                     <li>Take any trash to the designated bins outside.</li>
                 </ul>
+                  <p className="text-gray-600"> In case of self check-out:</p>
+                <ul className="list-disc ml-5 space-y-2 text-gray-600">
+                    <li>Close and lock all doors.</li>
+                    <li>Return the keys to the lockbox.</li>
+                </ul>
                 </div>
-
-                <Separator />
-                
-                <div>
-                  <h3 className="font-medium text-gray-800 mb-1">Check-Out Procedure</h3>
-                  <ul className="list-disc ml-5 space-y-2 text-gray-600">
-                    <li>Leave all used towels in the bathtub or shower.</li>
-                    <li>Load and start the dishwasher before leaving.</li>
-                    <li>Take all trash to the designated bins outside.</li>
-                    <li>Turn off all lights and appliances.</li>
-                    <li>Close and lock all windows and doors.</li>
-                    <li>Return keys to the lockbox.</li>
-                  </ul>
-                </div>
-                
+                              
                 <Separator />
                 
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
                   <p className="text-gray-600">
                     If you need a late check-out, please contact us at least 36 hours in advance.
-                    Subject to availability, late check-out until 2:00 PM may be arranged for an additional fee.
+                    Subject to availability andmay incur additional charges.
                   </p>
                 </div>
               </div>
@@ -173,10 +164,10 @@ const CheckIn = () => {
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Thermometer size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Temperature Control</h3>
+                  <h3 className="font-medium text-gray-800">Mindful A/C Use</h3>
                 </div>
                 <p className="text-gray-600">
-                  The thermostat is located in the main hallway. Please set between 68-78°F to conserve energy.
+                  We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s). 
                 </p>
               </div>
               
@@ -186,7 +177,7 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800">Parking Information</h3>
                 </div>
                 <p className="text-gray-600">
-                  Park in the designated spot #12. Additional street parking is available without permits.
+                  Free parking is available right in front. Please park in front of the apartment to ensure space for others.
                 </p>
               </div>
             </div>
@@ -194,10 +185,12 @@ const CheckIn = () => {
             <div className="mt-6 bg-vacation-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
-                <li>Please be respectful of neighbors - quiet hours are from 10 PM to 8 AM.</li>
-                <li>No smoking is allowed anywhere on the property, including balconies and patios.</li>
+                <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
+                <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
-                <li>Maximum occupancy is 6 guests. Unauthorized guests are not allowed.</li>
+                <li>Maximum occupancy is 4 guests. Unauthorized guests are not allowed.</li>
+                <li>Towels are for use within the villa. Please do not take towels to the beach. Beach towels are available.</li>
+                <li>Subletting is not allowed. The villa may only be used by the registered guests.</li>
               </ul>
             </div>
           </GuidebookSection>
