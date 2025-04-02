@@ -37,12 +37,12 @@ const CheckIn = () => {
                 <Clock size={24} className="text-vacation-600 mr-3" />
                 <h1 className="text-3xl font-semibold text-gray-900">Check-In & Check-Out Information</h1>
               </div>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-4">
                 Everything you need to know for a smooth arrival and departure from our vacation rental.
                 Please read this information carefully before your stay.
                 
-                <br /><br />
-                
+              </p>
+                <p className="text-lg text-gray-600">
                 Our preferred check-in method is in person, as we love the opportunity to welcome you, 
                 show you around, and share our top local tips to make your stay truly unforgettable. 
                 That said, we completely understand if you prefer a more independent arrival — our smooth 
