@@ -91,7 +91,7 @@ const CheckIn = () => {
                   
                   <Button 
                     size="sm" 
-                    className="bg-vacation-600 hover:bg-vacation-700 text-white mb-2"
+                    className="bg-vacation-600 hover:bg-vacation-700 text-white mb-4"
                     onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
@@ -103,7 +103,7 @@ const CheckIn = () => {
                     onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
                   >
                     <Map size={10} className="mr-2" />
-                    Route from the airport
+                    Route from the airport1
                   </Button>
                 </div>
               </div>
@@ -162,24 +162,23 @@ const CheckIn = () => {
             icon={<ShieldAlert size={20} />}
           >
             <div className="grid md:grid-cols-3 gap-6">
-                            
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <Thermometer size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Outside gate</h3>
-                </div>
-                <p className="text-gray-600">
-                  If the gate is closed upon arrival, enter code 123456#.. 
-                </p>
-              </div>
-              
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
                   <Wifi size={20} className="text-vacation-600 mr-2" />
                   <h3 className="font-medium text-gray-800">WiFi Information</h3>
                 </div>
-                <p className="text-gray-600 mb-2">Network: WVOchenti4</p>
+                <p className="text-gray-600 mb-2">Network: OceanView_Guest</p>
                 <p className="text-gray-600">Password: BeachLife2024</p>
+              </div>
+              
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <Thermometer size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Mindful A/C Use</h3>
+                </div>
+                <p className="text-gray-600">
+                  We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s). 
+                </p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
@@ -196,7 +195,6 @@ const CheckIn = () => {
             <div className="mt-6 bg-vacation-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
-                li>Mindful A/C use - We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s).</li>
                 <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
