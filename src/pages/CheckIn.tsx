@@ -88,22 +88,24 @@ const CheckIn = () => {
                     Kaya Watervillas 84<br />
                     Bonaire
                   </p>
-                  <Button 
-                    size="sm" 
-                   className="bg-vacation-600 hover:bg-vacation-700 text-white"
-                    onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
-                  >
-                    <Map size={10} className="mr-2" />
-                    Open in Maps
-                  </Button>
-                  <Button 
-                    size="sm" 
-                   className="bg-vacation-600 hover:bg-vacation-700 text-white"
-                    onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
-                  >
-                    <Map size={10} className="mr-2" />
-                    Route from the airport5
-                  </Button>
+                  <div className="flex flex-col space-y-2"> {/* Force the buttons to stack vertically */}
+                    <Button 
+                      size="sm" 
+                      className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                      onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
+                    >
+                      <Map size={10} className="mr-2" />
+                      Open in Maps
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                      onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
+                    >
+                      <Map size={10} className="mr-2" />
+                      Route from the airport3
+                    </Button>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -195,7 +197,6 @@ const CheckIn = () => {
             <div className="mt-6 bg-vacation-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
-                <li>Mindful A/C Use: We recommend setting a comfortable temperature, but please avoid leaving it running unnecessarily when you’re not in the room(s).</li>
                 <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
