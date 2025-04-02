@@ -117,10 +117,10 @@ const CheckIn = () => {
 
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 mb-4">
                     At check-out, you don’t need to worry about cleaning — we’ll take care of everything! Just make sure to check for any personal items, and we wish you a safe journey!
                   </p>
-                  <p>However, feel free to:</p>
+                  <p className="text-gray-600"> However, feel free to:</p>
                 <ul className="list-disc ml-5 space-y-2 text-gray-600">
                     <li>Leave all used towels in the bathroom.</li>
                     <li>Load and start the dishwasher before you leave.</li>
