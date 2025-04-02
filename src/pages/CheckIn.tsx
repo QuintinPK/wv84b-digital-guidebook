@@ -109,10 +109,25 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800 mb-1">Check-Out Time</h3>
                   <p className="text-gray-600">11:00 AM</p>
                   <p className="text-sm text-gray-500 mt-1">
-                    Late check-out may result in additional charges.
+                    Late check-out is subject to availability and may incur additional charges.
                   </p>
                 </div>
                 
+                <Separator />
+
+                <div>
+                  <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
+                  <p className="text-gray-600">
+                    At check-out, you don’t need to worry about cleaning — we’ll take care of everything! Just make sure to check for any personal items, and we wish you a safe journey!
+                  </p>
+                  <p>However, feel free to:</p>
+                <ul>
+                    <li>Leave all used towels in the bathroom.</li>
+                    <li>Load and start the dishwasher before you leave.</li>
+                    <li>Take any trash to the designated bins outside.</li>
+                </ul>
+                </div>
+
                 <Separator />
                 
                 <div>
@@ -132,7 +147,7 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
                   <p className="text-gray-600">
-                    If you need a late check-out, please contact us at least 24 hours in advance.
+                    If you need a late check-out, please contact us at least 36 hours in advance.
                     Subject to availability, late check-out until 2:00 PM may be arranged for an additional fee.
                   </p>
                 </div>
