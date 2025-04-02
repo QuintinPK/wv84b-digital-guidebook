@@ -1,5 +1,5 @@
 
-import { Heart, Instagram, Facebook, Twitter } from "lucide-react";
+import { Heart, Instagram, Facebook, Twitter, WhatsApp, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -46,14 +46,14 @@ const Footer = () => {
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="Instagram"
+                aria-label="MessageCircle"
               >
                 <Instagram size={20} />
               </a>
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="Facebook"
+                aria-label="WhatsApp"
               >
                 <Facebook size={20} />
               </a>
