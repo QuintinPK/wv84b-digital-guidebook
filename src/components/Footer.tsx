@@ -60,7 +60,7 @@ const Footer = () => {
               <a 
                 href="#" 
                 className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="WhatsApp"
+                aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
