@@ -90,7 +90,8 @@ const CheckIn = () => {
                   </p>
                   <Button 
                     size="sm" 
-                    className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                   className="bg-vacation-600 hover:bg-vacation-700 text-white"
+                    onClick={() => window.open('https://www.google.com/maps?q=12.134833,-68.270444', '_blank')}
                   >
                     <Map size={16} className="mr-2" />
                     Open in Maps
