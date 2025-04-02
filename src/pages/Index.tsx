@@ -25,7 +25,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/ade981c2-b157-4f85-b799-e243dd727098.png" 
               alt="Vacation rental" 
-              className="h-full w-full object-cover opacity-70"
+              className="h-full w-full object-cover opacity-50"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
           </div>
