@@ -66,7 +66,7 @@ const Index = () => {
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Self check-in with lockbox
+                      (Self) check-in with
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -94,7 +94,7 @@ const Index = () => {
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Beautiful beaches within walking distance
+                      Stunning beaches just a short drive away
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -102,7 +102,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Historic downtown and hiking trails
+                      Nearby supermarkets for all your grocery needs
                     </li>
                   </ul>
                   <div className="mt-4">
@@ -126,7 +126,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Heating and cooling information
+                      Temperature control instructions
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -158,7 +158,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Property management contacts
+                      Local tourism information
                     </li>
                   </ul>
                   <div className="mt-4">
