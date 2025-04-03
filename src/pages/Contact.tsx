@@ -92,7 +92,7 @@ const Contact = () => {
                     <PhoneCall size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Phone Number</h3>
-                      <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
+                      <p className="text-gray-600 mt-1">+599 795 1826</p>
                       <p className="text-sm text-gray-500 mt-1">Available 24/7 for urgent matters</p>
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                     <Mail size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Email</h3>
-                      <p className="text-gray-600 mt-1">host@vacationguide.com</p>
+                      <p className="text-gray-600 mt-1">contact@seasideserenitybonaire.com</p>
                       <p className="text-sm text-gray-500 mt-1">Typically responds within 2 hours</p>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                     <MessageCircle size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Text Message/WhatsApp</h3>
-                      <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
+                      <p className="text-gray-600 mt-1">+599 795 1826</p>
                       <p className="text-sm text-gray-500 mt-1">Quickest way to reach us for non-emergencies</p>
                     </div>
                   </div>
