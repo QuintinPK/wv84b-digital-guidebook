@@ -102,7 +102,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Nearby supermarkets for all your grocery needs
+                      Nearby supermarkets 
                     </li>
                   </ul>
                   <div className="mt-4">
