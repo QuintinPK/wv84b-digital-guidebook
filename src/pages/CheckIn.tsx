@@ -56,8 +56,8 @@ const CheckIn = () => {
                   <Wifi size={20} className="text-vacation-600 mr-2" />
                   <h3 className="font-medium text-gray-800">WiFi Information</h3>
                 </div>
-                <p className="text-gray-600 mb-2">Network: Ochenti4A</p>
-                <p className="text-gray-600">Password: WVOchenti4A</p>
+                <p className="text-gray-600 mb-2">Network: <span className="font-bold">Ochenti4A</span></p>
+                <p className="text-gray-600 mb-2">Password: <span className="font-bold">WVOchenti4A</span></p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
