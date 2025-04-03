@@ -5,21 +5,21 @@ import GuidebookSection from "@/components/GuidebookSection";
 const ClimateControlSection = () => {
   return (
     <GuidebookSection
-      title="Climate Control"
-      description="Heating and cooling instructions"
+      title="Temperature control"
+      description="Instructions for the AC's and fan's"
       icon={<Thermometer size={24} />}
     >
       <div className="space-y-4">
         <div>
-          <h3 className="font-medium text-gray-900 mb-2">Smart Thermostat</h3>
+          <h3 className="font-medium text-gray-900 mb-2">AC remote</h3>
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Located in the main hallway
+              Located in the each room room with an AC
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Set between 68-76°F for optimal efficiency
+              Set between 20-24°C / 68-76°F for optimal efficiency
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -33,11 +33,11 @@ const ClimateControlSection = () => {
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Use remote controls found in each room
+              Use remote controls found in the living room and on the porch
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Please turn off when leaving the house
+              The bedrooms have standing fans that are operated manually
             </li>
           </ul>
         </div>
