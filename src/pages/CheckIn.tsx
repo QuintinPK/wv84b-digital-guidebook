@@ -126,11 +126,10 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Self Check-In Process</h3>
                   <ol className="list-decimal ml-5 space-y-2 text-gray-600">
-                    <li>If the gate is closed upon arrival, enter code 123456#.</li>
-                    <li>Enter code <span className="font-semibold">4286</span> on the keypad lockbox.</li>
-                    <li>Remove the key from the lockbox.</li>
-                    <li>Use the key to unlock the front door.</li>
-                    <li>Return the key to the lockbox when you leave the property.</li>
+                    <li>If the gate is closed upon arrival, enter code <span className="font-semibold">23670#</span>.</li>
+                    <li>Access the lockbox using the code that has been/or will be provided (1 day before arrival).</li>
+                    <li>Retrieve the front door key from the lockbox.</li>
+                    <li>Return the key to the lockbox after your stay.</li>
                   </ol>
                 </div>
                 
@@ -139,8 +138,8 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Address & Directions</h3>
                   <p className="text-gray-600 mb-2">
-                    Kaya Watervillas 84<br />
-                    Bonaire
+                    Kaya Watervillas 84
+                  
                   </p>
                   
                   <div className="flex flex-col space-y-3">
@@ -187,7 +186,7 @@ const CheckIn = () => {
                     At check-out, you don’t need to worry about cleaning — we’ll take care of everything! Just make sure to check for any personal items, and we wish you a safe journey!
                   </p>
                   <p className="text-gray-600"> However, feel free to:</p>
-                <ul className="list-disc ml-5 space-y-2 text-gray-600">
+                <ul className="list-disc ml-5 space-y-2 text-gray-600 mb-4">
                     <li>Leave all used towels in the bathroom.</li>
                     <li>Load and start the dishwasher before you leave.</li>
                     <li>Take any trash to the designated bins outside.</li>
@@ -204,8 +203,8 @@ const CheckIn = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Late Check-Out</h3>
                   <p className="text-gray-600">
-                    If you need a late check-out, please contact us at least 36 hours in advance.
-                    Subject to availability andmay incur additional charges.
+                    If you’d like a late check-out, please inform us upon arrival .
+                    Subject to availability and may incur additional charges.
                   </p>
                 </div>
               </div>
