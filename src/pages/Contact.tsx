@@ -1,9 +1,8 @@
-ide Sereeimport Navbar from "@/components/Navbar";
+
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { 
   PhoneCall, 
@@ -11,44 +10,49 @@ import {
   MessageCircle, 
   MapPin, 
   ArrowLeft, 
-  ShieldAlert,
-  Clock
+  ShieldAlert
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useToast } from "@/components/ui/use-toast";
+import { useEffect, useRef } from "react";
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const mapContainer = useRef<HTMLDivElement>(null);
+  const map = useRef<mapboxgl.Map | null>(null);
+  
+  // Initialize map with the coordinates
+  useEffect(() => {
+    if (!mapContainer.current) return;
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
+    // Convert coordinates from DMS to decimal degrees
+    // 12°08'05.4"N 68°16'15.5"W
+    // 12.134833, -68.270972
+    const lat = 12.134833;
+    const lng = -68.270972;
     
-    // Show success toast
-    toast({
-      title: "Message Sent",
-      description: "We've received your message and will respond shortly.",
-      duration: 5000,
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
+    
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [lng, lat],
+      zoom: 15
     });
     
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
+    // Add marker at the location
+    new mapboxgl.Marker()
+      .setLngLat([lng, lat])
+      .addTo(map.current);
+      
+    // Add navigation controls
+    map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    
+    // Cleanup on unmount
+    return () => {
+      map.current?.remove();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -149,69 +153,14 @@ const Contact = () => {
             </div>
             
             <div className="space-y-6">
-              <Card className="border-0 shadow-sm">
-                <div className="p-6">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Send Us a Message</h2>
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                        Your Name
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                        Your Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        rows={5}
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    
-                    <Button 
-                      type="submit"
-                      className="w-full bg-vacation-600 hover:bg-vacation-700 text-white"
-                    >
-                      Send Message
-                    </Button>
-                  </form>
-                </div>
-              </Card>
-              
               <GuidebookSection
                 title="Property Address"
                 description="Location and directions"
                 icon={<MapPin size={20} />}
               >
                 <div className="mt-2">
-                  <div className="bg-gray-100 rounded-lg h-52 mb-4 flex items-center justify-center text-gray-500">
-                    Interactive Map Would Appear Here
+                  <div className="bg-gray-100 rounded-lg h-52 mb-4 overflow-hidden" ref={mapContainer}>
+                    {/* Map will be rendered here */}
                   </div>
                   
                   <div className="p-4 border border-gray-100 rounded-lg">
@@ -220,42 +169,21 @@ const Contact = () => {
                       Watervillas 84<br />
                       Bonaire
                     </p>
+                    <p className="text-gray-600 mt-1 font-medium">
+                      12°08'05.4"N 68°16'15.5"W
+                    </p>
                     
                     <div className="mt-4">
                       <Button 
                         variant="outline" 
                         size="sm"
                         className="text-vacation-600 border-vacation-200"
+                        onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=12.134833,-68.270972`, '_blank')}
                       >
                         Get Directions
                       </Button>
                     </div>
                   </div>
-                </div>
-              </GuidebookSection>
-              
-              <GuidebookSection
-                title="Office Hours"
-                description="When we're available"
-                icon={<Clock size={20} />}
-              >
-                <div className="space-y-2 mt-2">
-                  <div className="flex justify-between items-center p-2">
-                    <span className="text-gray-800">Monday - Friday</span>
-                    <span className="text-gray-600">9:00 AM - 5:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center p-2 bg-gray-50 rounded">
-                    <span className="text-gray-800">Saturday</span>
-                    <span className="text-gray-600">10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center p-2">
-                    <span className="text-gray-800">Sunday</span>
-                    <span className="text-gray-600">Closed</span>
-                  </div>
-                </div>
-                
-                <div className="mt-4 bg-vacation-50 p-3 rounded-lg text-vacation-800 text-sm">
-                  <p>For after-hours emergencies, please use the emergency contact number.</p>
                 </div>
               </GuidebookSection>
             </div>
