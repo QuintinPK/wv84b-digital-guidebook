@@ -46,7 +46,7 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800">Community gate</h3>
                 </div>
                 <p className="text-gray-600">
-                   Gate closed? Use 23670# on the keypad, found on a pole to the left.
+                   Gate closed? Use <strong>23670#</strong> on the keypad, found on a pole to the left.
                 </p>
                    
                 </p>
