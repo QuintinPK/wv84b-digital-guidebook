@@ -12,11 +12,11 @@ const HouseRulesSection = () => {
       <div className="space-y-1 text-gray-600">
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-          No smoking inside the house
+          No smoking inside
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-          Quiet hours from 10pm-8am
+          Quiet hours from 11pm-7am
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -24,7 +24,7 @@ const HouseRulesSection = () => {
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-          Please remove shoes inside
+          Maximum occupancy is 4 overnight guests
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -32,7 +32,7 @@ const HouseRulesSection = () => {
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-          Pets must be approved in advance
+          Pets are not permitted unless specifically arranged prior to booking
         </li>
       </div>
     </GuidebookSection>
