@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+ide Sereeimport Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
@@ -215,11 +215,10 @@ const Contact = () => {
                   </div>
                   
                   <div className="p-4 border border-gray-100 rounded-lg">
-                    <p className="font-medium text-gray-800">Ocean View Villa</p>
+                    <p className="font-medium text-gray-800">Seaside Serenity Bonaire</p>
                     <p className="text-gray-600 mt-1">
-                      1234 Ocean View Dr<br />
-                      Malibu, CA 90265<br />
-                      United States
+                      Watervillas 84<br />
+                      Bonaire
                     </p>
                     
                     <div className="mt-4">
