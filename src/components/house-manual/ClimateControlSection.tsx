@@ -29,11 +29,11 @@ const ClimateControlSection = () => {
         </div>
         
         <div>
-          <h3 className="font-medium text-gray-900 mb-2">Ceiling Fans</h3>
+          <h3 className="font-medium text-gray-900 mb-2">(Ceiling) Fans</h3>
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Use remote controls found in the living room and on the porch
+              Use remote controls found in the living room and on the porch for the ceiling fans.
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
