@@ -137,8 +137,8 @@ const CheckIn = () => {
                 
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Address & Directions</h3>
-                  <p className="text-gray-600 mb-4">
-                    Kaya Watervillas 84
+                  <p className="text-gray-600 mb-2">
+                    Kaya Watervillas 84 <br /><br />
                 
                   </p>
                   
