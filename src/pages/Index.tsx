@@ -66,7 +66,7 @@ const Index = () => {
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      (Self) check-in with
+                      (Self) check-in
                     </li>
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />

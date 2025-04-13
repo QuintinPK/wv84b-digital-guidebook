@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { 
   PhoneCall, 
   Mail, 
@@ -13,47 +12,8 @@ import {
   ShieldAlert
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Contact = () => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
-  
-  // Initialize map with the coordinates
-  useEffect(() => {
-    if (!mapContainer.current) return;
-
-    // Convert coordinates from DMS to decimal degrees
-    // 12°08'05.4"N 68°16'15.5"W
-    // 12.134833, -68.270972
-    const lat = 12.134833;
-    const lng = -68.270972;
-    
-    mapboxgl.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA';
-    
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v12',
-      center: [lng, lat],
-      zoom: 15
-    });
-    
-    // Add marker at the location
-    new mapboxgl.Marker()
-      .setLngLat([lng, lat])
-      .addTo(map.current);
-      
-    // Add navigation controls
-    map.current.addControl(new mapboxgl.NavigationControl(), 'top-right');
-    
-    // Cleanup on unmount
-    return () => {
-      map.current?.remove();
-    };
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -159,8 +119,12 @@ const Contact = () => {
                 icon={<MapPin size={20} />}
               >
                 <div className="mt-2">
-                  <div className="bg-gray-100 rounded-lg h-52 mb-4 overflow-hidden" ref={mapContainer}>
-                    {/* Map will be rendered here */}
+                  <div className="bg-gray-100 rounded-lg h-52 mb-4 overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/ade981c2-b157-4f85-b799-e243dd727098.png" 
+                      alt="Map of property location" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   <div className="p-4 border border-gray-100 rounded-lg">
