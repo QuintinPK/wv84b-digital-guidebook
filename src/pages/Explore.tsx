@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronRight, MapPin, Utensils, Waves, ArrowLeft, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -224,62 +223,83 @@ const Explore = () => {
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="shopping">
+              <AccordionItem value="supermarkets">
                 <AccordionTrigger className="px-4 py-3 hover:bg-gray-50">
                   <div className="flex items-center">
                     <ShoppingBag size={20} className="mr-2 text-vacation-600" />
-                    <span className="font-medium">Shopping</span>
+                    <span className="font-medium">Supermarkets</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-6 pt-2">
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Local Market</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">
+                        <a href="https://maps.google.com/?q=Van+den+Tweel+Supermarket+Bonaire" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           className="hover:text-vacation-600">
+                          Van den Tweel Supermarket
+                        </a>
+                      </h3>
                       <p className="text-gray-600 mb-2">
-                        Fresh local produce, handmade crafts, and delicious food stands.
+                        Large, well-stocked store with international and local products.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open Saturday and Sunday, 8am-2pm
+                          Open daily 8am–8pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          10-minute drive from the house
+                          6-minute drive
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Town Center Mall</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">
+                        <a href="https://maps.google.com/?q=Warehouse+Bonaire" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           className="hover:text-vacation-600">
+                          Warehouse Bonaire
+                        </a>
+                      </h3>
                       <p className="text-gray-600 mb-2">
-                        Modern shopping mall with various retail stores and restaurants.
+                        Grocery store with a wide selection of fresh produce and household items.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open daily 10am-9pm
+                          Open daily 8am–8pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          15-minute drive from the house
+                          5-minute drive
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Artisan Shops</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">
+                        <a href="https://maps.google.com/?q=Bondigro+Supermarket+Bonaire" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           className="hover:text-vacation-600">
+                          Bondigro Supermarket
+                        </a>
+                      </h3>
                       <p className="text-gray-600 mb-2">
-                        Local artist galleries and boutique shops with unique souvenirs.
+                        Wholesale-style supermarket with groceries, drinks, and household goods.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Most shops open 11am-6pm
+                          Open Sunday 9am–1pm, Monday–Saturday 7:30am–7:30pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Located in the historic downtown area
+                          5-minute drive
                         </li>
                       </ul>
                     </div>
