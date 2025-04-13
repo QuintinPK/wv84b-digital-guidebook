@@ -35,125 +35,95 @@ const Explore = () => {
           
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full border rounded-lg overflow-hidden">
-              <AccordionItem value="attractions">
+              <AccordionItem value="supermarkets">
                 <AccordionTrigger className="px-4 py-3 hover:bg-gray-50">
                   <div className="flex items-center">
-                    <MapPin size={20} className="mr-2 text-vacation-600" />
-                    <span className="font-medium">Local Attractions</span>
+                    <ShoppingBag size={20} className="mr-2 text-vacation-600" />
+                    <span className="font-medium">Supermarkets</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-6 pt-2">
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Historic Downtown</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Van den Tweel Supermarket</h3>
                       <p className="text-gray-600 mb-2">
-                        Explore charming shops, galleries, and historic sites just a 10-minute drive away.
+                        Large, well-stocked store with international and local products.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open daily from 10am to 8pm
+                          Open daily 8am–8pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Free parking available
+                          6-minute drive
+                        </li>
+                        <li className="flex items-center">
+                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                          <a 
+                            href="https://maps.google.com/?q=Van+den+Tweel+Supermarket+Bonaire" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-vacation-600 hover:underline flex items-center"
+                          >
+                            Location
+                          </a>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Nature Preserve</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Warehouse Bonaire</h3>
                       <p className="text-gray-600 mb-2">
-                        Hiking trails with stunning views and wildlife observation areas.
+                        Grocery store with a wide selection of fresh produce and household items.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open sunrise to sunset
+                          Open daily 8am–8pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Trail maps available in the house
+                          5-minute drive
+                        </li>
+                        <li className="flex items-center">
+                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                          <a 
+                            href="https://maps.google.com/?q=Warehouse+Bonaire" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-vacation-600 hover:underline flex items-center"
+                          >
+                            Location
+                          </a>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Cultural Museum</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Bondigro Supermarket</h3>
                       <p className="text-gray-600 mb-2">
-                        Learn about local history and culture through interactive exhibits.
+                        Wholesale-style supermarket with groceries, drinks, and household goods.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Tuesday-Sunday, 9am-5pm
+                          Open Sunday 9am–1pm, Monday–Saturday 7:30am–7:30pm
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Discount tickets in welcome folder
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-              
-              <AccordionItem value="dining">
-                <AccordionTrigger className="px-4 py-3 hover:bg-gray-50">
-                  <div className="flex items-center">
-                    <Utensils size={20} className="mr-2 text-vacation-600" />
-                    <span className="font-medium">Dining</span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-4">
-                  <div className="space-y-6 pt-2">
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Seaside Bistro</h3>
-                      <p className="text-gray-600 mb-2">
-                        Fresh seafood and stunning ocean views just a 5-minute walk.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Dinner: 5pm-10pm daily
+                          5-minute drive
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Reservations recommended
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Farm Table</h3>
-                      <p className="text-gray-600 mb-2">
-                        Farm-to-table restaurant featuring local produce and meats.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Lunch and dinner
-                        </li>
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          15-minute drive
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Morning Café</h3>
-                      <p className="text-gray-600 mb-2">
-                        Delicious breakfast and brunch options with outdoor seating.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          6am-2pm daily
-                        </li>
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          10-minute walk
+                          <a 
+                            href="https://maps.google.com/?q=Bondigro+Supermarket+Bonaire" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-vacation-600 hover:underline flex items-center"
+                          >
+                            Location
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -220,92 +190,96 @@ const Explore = () => {
                         </li>
                       </ul>
                     </div>
+                    
+                    <div className="pt-3 border-t border-gray-200">
+                      <p className="text-vacation-600">
+                        <a 
+                          href="https://bonaireisland.com/map/?type=beach_site" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center hover:underline"
+                        >
+                          For a complete guide to Bonaire's beaches, visit bonaireisland.com
+                          <ChevronRight size={16} className="ml-1" />
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="supermarkets">
+              <AccordionItem value="dining">
                 <AccordionTrigger className="px-4 py-3 hover:bg-gray-50">
                   <div className="flex items-center">
-                    <ShoppingBag size={20} className="mr-2 text-vacation-600" />
-                    <span className="font-medium">Supermarkets</span>
+                    <Utensils size={20} className="mr-2 text-vacation-600" />
+                    <span className="font-medium">Dining</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-6 pt-2">
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">
-                        <a href="https://maps.google.com/?q=Van+den+Tweel+Supermarket+Bonaire" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           className="hover:text-vacation-600 flex items-center">
-                          <MapPin size={16} className="mr-2 text-vacation-500" />
-                          Van den Tweel Supermarket
-                        </a>
-                      </h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Seaside Bistro</h3>
                       <p className="text-gray-600 mb-2">
-                        Large, well-stocked store with international and local products.
+                        Fresh seafood and stunning ocean views just a 5-minute walk.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open daily 8am–8pm
+                          Dinner: 5pm-10pm daily
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          6-minute drive
+                          Reservations recommended
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">
-                        <a href="https://maps.google.com/?q=Warehouse+Bonaire" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           className="hover:text-vacation-600 flex items-center">
-                          <MapPin size={16} className="mr-2 text-vacation-500" />
-                          Warehouse Bonaire
-                        </a>
-                      </h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Farm Table</h3>
                       <p className="text-gray-600 mb-2">
-                        Grocery store with a wide selection of fresh produce and household items.
+                        Farm-to-table restaurant featuring local produce and meats.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open daily 8am–8pm
+                          Lunch and dinner
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          5-minute drive
+                          15-minute drive
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">
-                        <a href="https://maps.google.com/?q=Bondigro+Supermarket+Bonaire" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           className="hover:text-vacation-600 flex items-center">
-                          <MapPin size={16} className="mr-2 text-vacation-500" />
-                          Bondigro Supermarket
-                        </a>
-                      </h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Morning Café</h3>
                       <p className="text-gray-600 mb-2">
-                        Wholesale-style supermarket with groceries, drinks, and household goods.
+                        Delicious breakfast and brunch options with outdoor seating.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Open Sunday 9am–1pm, Monday–Saturday 7:30am–7:30pm
+                          6am-2pm daily
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          5-minute drive
+                          10-minute walk
                         </li>
                       </ul>
+                    </div>
+                    
+                    <div className="pt-3 border-t border-gray-200">
+                      <p className="text-vacation-600">
+                        <a 
+                          href="https://bonaireisland.com/experiences/cuisine/restaurants/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center hover:underline"
+                        >
+                          For a guide to dining options in Bonaire, check out bonaireisland.com
+                          <ChevronRight size={16} className="ml-1" />
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </AccordionContent>
