@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { ChevronRight, MapPin, Utensils, Waves, ArrowLeft, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -164,58 +165,58 @@ const Explore = () => {
                 <AccordionTrigger className="px-4 py-3 hover:bg-gray-50">
                   <div className="flex items-center">
                     <Waves size={20} className="mr-2 text-vacation-600" />
-                    <span className="font-medium">Beach Guide</span>
+                    <span className="font-medium">Nearest Beaches</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-6 pt-2">
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Main Beach</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Te Amo Beach</h3>
                       <p className="text-gray-600 mb-2">
-                        Sandy shores with lifeguards and amenities, 5-minute walk from the house.
+                        Sandy beach with shallow waters, perfect for swimming and snorkeling.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Lifeguards 9am-5pm (summer)
+                          750 meters (0.5 miles) from the villa, 2-minute drive or 10-minute walk
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Restrooms and showers available
+                          Food trucks often nearby
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Secret Cove</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Donkey Beach (Palu di Mangel)</h3>
                       <p className="text-gray-600 mb-2">
-                        Secluded beach perfect for peaceful relaxation and snorkeling.
+                        The beach can be relatively quiet, offering a more private and natural experience.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          15-minute walk from the house
+                          1 km (0.6 miles) from the villa, 3-minute drive or 12-minute walk
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Best at low tide
+                          Great for plane spotting!
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Beach Equipment</h3>
+                      <h3 className="font-medium text-gray-900 mb-2">Bachelor's beach (Playa Kalki)</h3>
                       <p className="text-gray-600 mb-2">
-                        Available equipment in the garage for your use during your stay.
+                        Small sandy strip at low tide, excellent for snorkeling and sunset views.
                       </p>
                       <ul className="space-y-1 text-gray-600">
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Beach chairs and umbrellas
+                          2 km (1.2 miles) from the villa, 4-minute drive
                         </li>
                         <li className="flex items-center">
                           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Snorkeling gear and beach toys
+                          Access via a short staircase
                         </li>
                       </ul>
                     </div>
@@ -237,7 +238,8 @@ const Explore = () => {
                         <a href="https://maps.google.com/?q=Van+den+Tweel+Supermarket+Bonaire" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           className="hover:text-vacation-600">
+                           className="hover:text-vacation-600 flex items-center">
+                          <MapPin size={16} className="mr-2 text-vacation-500" />
                           Van den Tweel Supermarket
                         </a>
                       </h3>
@@ -261,7 +263,8 @@ const Explore = () => {
                         <a href="https://maps.google.com/?q=Warehouse+Bonaire" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           className="hover:text-vacation-600">
+                           className="hover:text-vacation-600 flex items-center">
+                          <MapPin size={16} className="mr-2 text-vacation-500" />
                           Warehouse Bonaire
                         </a>
                       </h3>
@@ -285,7 +288,8 @@ const Explore = () => {
                         <a href="https://maps.google.com/?q=Bondigro+Supermarket+Bonaire" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           className="hover:text-vacation-600">
+                           className="hover:text-vacation-600 flex items-center">
+                          <MapPin size={16} className="mr-2 text-vacation-500" />
                           Bondigro Supermarket
                         </a>
                       </h3>
