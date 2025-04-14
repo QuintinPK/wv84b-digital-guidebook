@@ -8,16 +8,20 @@ import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
 import { Camera } from "lucide-react";
+
 const CheckIn = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const lockboxImages = ["/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png", "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"];
   const gateKeypadImage = "/lovable-uploads/da9eaf81-9e05-4493-8ce0-8930a2be57e4.png";
+
   const nextImage = () => {
     setCurrentImageIndex(prev => (prev + 1) % lockboxImages.length);
   };
+
   const prevImage = () => {
     setCurrentImageIndex(prev => (prev - 1 + lockboxImages.length) % lockboxImages.length);
   };
+
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       
@@ -139,9 +143,14 @@ const CheckIn = () => {
                         </DialogTrigger>
                         <DialogContent className="sm:max-w-md">
                           <div className="relative">
-                            <div className="flex space-x-2">
-                              {lockboxImages.map((image, index) => <img key={index} src={image} alt={`Lockbox image ${index + 1}`} className="w-full rounded-lg" />)}
-                            </div>
+                            <img src={lockboxImages[currentImageIndex]} alt={`Lockbox image ${currentImageIndex + 1}`} className="w-full rounded-lg" />
+                            {lockboxImages.length > 1 && (
+                              <div className="absolute inset-x-0 bottom-0 flex justify-center p-2 bg-black bg-opacity-50 rounded-b-lg">
+                                <Button variant="outline" size="sm" onClick={prevImage} className="mr-2">Previous</Button>
+                                <span className="text-white self-center">{currentImageIndex + 1}/{lockboxImages.length}</span>
+                                <Button variant="outline" size="sm" onClick={nextImage} className="ml-2">Next</Button>
+                              </div>
+                            )}
                           </div>
                         </DialogContent>
                       </Dialog>
@@ -330,4 +339,5 @@ const CheckIn = () => {
       <Footer />
     </div>;
 };
+
 export default CheckIn;
