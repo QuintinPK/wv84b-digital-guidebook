@@ -42,7 +42,7 @@ const CheckIn = () => {
                   Gate closed? Use <span className="font-semibold">23670#</span> on the keypad, found on a pole to the left.
                   <Dialog>
                     <DialogTrigger className="text-left">
-                      <Button variant="ghost" className="ml-2 inline-flex items-center mx-0">
+                      <Button variant="ghost" className="ml-2 inline-flex items-center my-0 py-0 bg-vacation-50 px-[7px] text-base rounded-none mx-0">
                         <Camera size={16} className="text-vacation-600 mr-1" />
                         <span className="text-vacation-600 text-sm text-left">View photo</span>
                       </Button>
@@ -76,7 +76,7 @@ const CheckIn = () => {
               </div>
             </div>
             
-            <div className="mt-6 bg-vacation-50 rounded-lg p-4">
+            <div className="mt-6 rounded-lg p-4 bg-vacation-50">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
                 <li>Mindful A/C Use: Enjoy a comfortable temperature, but please don't leave it running when you're away.</li>
