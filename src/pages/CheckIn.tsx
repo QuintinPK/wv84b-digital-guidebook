@@ -21,6 +21,7 @@ import {
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
+import { Camera } from "lucide-react";
 
 const CheckIn = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -69,9 +70,9 @@ const CheckIn = () => {
                   Gate closed? Use <span className="font-semibold">23670#</span> on the keypad, found on a pole to the left.
                   <Dialog>
                     <DialogTrigger>
-                      <Button variant="ghost" size="icon" className="ml-2 h-6 w-6 rounded-full">
-                        <Image size={16} className="text-vacation-600" />
-                        <span className="sr-only">View gate keypad image</span>
+                      <Button variant="ghost" className="ml-2 inline-flex items-center">
+                        <Camera size={16} className="text-vacation-600 mr-1" />
+                        <span className="text-vacation-600 text-sm">View photo</span>
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-md">
@@ -163,54 +164,26 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800 mb-1">Self Check-In Process</h3>
                   <ol className="list-decimal ml-5 space-y-2 text-gray-600">
                     <li>If the gate is closed upon arrival, enter code <span className="font-semibold">23670#</span>.</li>
-                    <li>Access the lockbox using the code that has been/or will be provided (1 day before arrival). 
+                    <li>
+                      Access the lockbox using the code that has been/or will be provided (1 day before arrival). 
                       <Dialog>
                         <DialogTrigger>
-                          <Button variant="ghost" size="icon" className="ml-2 h-6 w-6 rounded-full">
-                            <Image size={16} className="text-vacation-600" />
-                            <span className="sr-only">View lockbox images</span>
+                          <Button variant="ghost" className="ml-2 inline-flex items-center">
+                            <Camera size={16} className="text-vacation-600 mr-1" />
+                            <span className="text-vacation-600 text-sm">View photo</span>
                           </Button>
                         </DialogTrigger>
                         <DialogContent className="sm:max-w-md">
                           <div className="relative">
-                            <img 
-                              src={lockboxImages[currentImageIndex]} 
-                              alt={`Lockbox image ${currentImageIndex + 1}`}
-                              className="w-full rounded-lg"
-                            />
-                            
-                            <div className="absolute inset-0 flex items-center justify-between">
-                              <Button 
-                                variant="outline" 
-                                size="icon" 
-                                className="rounded-full bg-black/20 backdrop-blur-sm text-white hover:bg-black/40 border-0"
-                                onClick={prevImage}
-                              >
-                                <ArrowLeft size={20} />
-                                <span className="sr-only">Previous image</span>
-                              </Button>
-                              
-                              <Button 
-                                variant="outline" 
-                                size="icon" 
-                                className="rounded-full bg-black/20 backdrop-blur-sm text-white hover:bg-black/40 border-0"
-                                onClick={nextImage}
-                              >
-                                <ArrowLeft size={20} className="rotate-180" />
-                                <span className="sr-only">Next image</span>
-                              </Button>
-                            </div>
-                            
-                            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                              <div className="flex space-x-2 bg-black/20 backdrop-blur-sm rounded-full px-3 py-1">
-                                {lockboxImages.map((_, index) => (
-                                  <div 
-                                    key={index} 
-                                    className={`w-2 h-2 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
-                                    onClick={() => setCurrentImageIndex(index)}
-                                  />
-                                ))}
-                              </div>
+                            <div className="flex space-x-2">
+                              {lockboxImages.map((image, index) => (
+                                <img 
+                                  key={index}
+                                  src={image} 
+                                  alt={`Lockbox image ${index + 1}`}
+                                  className="w-full rounded-lg"
+                                />
+                              ))}
                             </div>
                           </div>
                         </DialogContent>
