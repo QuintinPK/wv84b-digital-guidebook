@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
@@ -29,6 +28,8 @@ const CheckIn = () => {
     "/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png",
     "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"
   ];
+  
+  const gateKeypadImage = "/lovable-uploads/da9eaf81-9e05-4493-8ce0-8930a2be57e4.png";
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % lockboxImages.length);
@@ -51,7 +52,6 @@ const CheckIn = () => {
             </Link>
           </div>
           
-          {/* First Thing Upon Arrival Section - Moved above the Check-In & Check-Out Information */}
           <GuidebookSection
             title="First Thing Upon Arrival"
             description="Important information to get you settled in"
@@ -67,7 +67,23 @@ const CheckIn = () => {
                 </div>
                 <p className="text-gray-600">
                   Gate closed? Use <span className="font-semibold">23670#</span> on the keypad, found on a pole to the left.
-                   
+                  <Dialog>
+                    <DialogTrigger>
+                      <Button variant="ghost" size="icon" className="ml-2 h-6 w-6 rounded-full">
+                        <Image size={16} className="text-vacation-600" />
+                        <span className="sr-only">View gate keypad image</span>
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-md">
+                      <div className="relative">
+                        <img 
+                          src={gateKeypadImage} 
+                          alt="Gate keypad"
+                          className="w-full rounded-lg"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </p>
               </div>
               
@@ -283,7 +299,6 @@ const CheckIn = () => {
             </GuidebookSection>
           </div>
           
-          {/* What's Included Section */}
           <GuidebookSection
             title="What's Included"
             description="Everything provided for your comfort during your stay"
@@ -291,7 +306,6 @@ const CheckIn = () => {
             className="mb-8"
           >
             <div className="grid md:grid-cols-3 gap-6 mt-4">
-              {/* Bed and Bath Column */}
               <div className="space-y-4">
                 <div className="flex items-center mb-2">
                   <Bed size={20} className="text-vacation-600 mr-2" />
@@ -325,7 +339,6 @@ const CheckIn = () => {
                 </ul>
               </div>
               
-              {/* Kitchen Column */}
               <div className="space-y-4">
                 <div className="flex items-center mb-2">
                   <Utensils size={20} className="text-vacation-600 mr-2" />
@@ -371,7 +384,6 @@ const CheckIn = () => {
                 </ul>
               </div>
               
-              {/* Other Stuff Column */}
               <div className="space-y-4">
                 <div className="flex items-center mb-2">
                   <Package size={20} className="text-vacation-600 mr-2" />
