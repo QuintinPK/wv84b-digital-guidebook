@@ -3,45 +3,22 @@ import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { 
-  Key, 
-  Clock, 
-  MapPin, 
-  ArrowLeft, 
-  Wifi, 
-  Thermometer,
-  ShieldAlert,
-  CarFront,
-  Map,
-  Bed,
-  Utensils,
-  Package,
-  Image
-} from "lucide-react";
+import { Key, Clock, MapPin, ArrowLeft, Wifi, Thermometer, ShieldAlert, CarFront, Map, Bed, Utensils, Package, Image } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
 import { Camera } from "lucide-react";
-
 const CheckIn = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const lockboxImages = [
-    "/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png",
-    "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"
-  ];
-  
+  const lockboxImages = ["/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png", "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"];
   const gateKeypadImage = "/lovable-uploads/da9eaf81-9e05-4493-8ce0-8930a2be57e4.png";
-
   const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % lockboxImages.length);
+    setCurrentImageIndex(prev => (prev + 1) % lockboxImages.length);
   };
-
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + lockboxImages.length) % lockboxImages.length);
+    setCurrentImageIndex(prev => (prev - 1 + lockboxImages.length) % lockboxImages.length);
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-grow bg-gray-50 py-10 pb-20">
@@ -53,12 +30,7 @@ const CheckIn = () => {
             </Link>
           </div>
           
-          <GuidebookSection
-            title="First Thing Upon Arrival"
-            description="Important information to get you settled in"
-            icon={<ShieldAlert size={20} />}
-            className="mb-8"
-          >
+          <GuidebookSection title="First Thing Upon Arrival" description="Important information to get you settled in" icon={<ShieldAlert size={20} />} className="mb-8">
             <div className="grid md:grid-cols-3 gap-6">
               
               <div className="border border-gray-100 rounded-lg p-4">
@@ -69,19 +41,15 @@ const CheckIn = () => {
                 <p className="text-gray-600">
                   Gate closed? Use <span className="font-semibold">23670#</span> on the keypad, found on a pole to the left.
                   <Dialog>
-                    <DialogTrigger>
-                      <Button variant="ghost" className="ml-2 inline-flex items-center">
+                    <DialogTrigger className="text-left">
+                      <Button variant="ghost" className="ml-2 inline-flex items-center mx-0">
                         <Camera size={16} className="text-vacation-600 mr-1" />
-                        <span className="text-vacation-600 text-sm">View photo</span>
+                        <span className="text-vacation-600 text-sm text-left">View photo</span>
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-md">
                       <div className="relative">
-                        <img 
-                          src={gateKeypadImage} 
-                          alt="Gate keypad"
-                          className="w-full rounded-lg"
-                        />
+                        <img src={gateKeypadImage} alt="Gate keypad" className="w-full rounded-lg" />
                       </div>
                     </DialogContent>
                   </Dialog>
@@ -144,11 +112,7 @@ const CheckIn = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <GuidebookSection
-              title="Check-In Details"
-              icon={<Key size={20} />}
-              className="h-full"
-            >
+            <GuidebookSection title="Check-In Details" icon={<Key size={20} />} className="h-full">
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Check-In Time</h3>
@@ -168,7 +132,7 @@ const CheckIn = () => {
                       Access the lockbox using the code that has been/or will be provided (1 day before arrival). 
                       <Dialog>
                         <DialogTrigger>
-                          <Button variant="ghost" className="ml-2 inline-flex items-center">
+                          <Button variant="ghost" className="ml-2 inline-flex items-center mx-0">
                             <Camera size={16} className="text-vacation-600 mr-1" />
                             <span className="text-vacation-600 text-sm">View photo</span>
                           </Button>
@@ -176,14 +140,7 @@ const CheckIn = () => {
                         <DialogContent className="sm:max-w-md">
                           <div className="relative">
                             <div className="flex space-x-2">
-                              {lockboxImages.map((image, index) => (
-                                <img 
-                                  key={index}
-                                  src={image} 
-                                  alt={`Lockbox image ${index + 1}`}
-                                  className="w-full rounded-lg"
-                                />
-                              ))}
+                              {lockboxImages.map((image, index) => <img key={index} src={image} alt={`Lockbox image ${index + 1}`} className="w-full rounded-lg" />)}
                             </div>
                           </div>
                         </DialogContent>
@@ -204,19 +161,11 @@ const CheckIn = () => {
                   </p>
                   
                   <div className="flex flex-col space-y-3">
-                    <Button 
-                      size="sm" 
-                      className="bg-vacation-600 hover:bg-vacation-700 text-white"
-                      onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}
-                    >
+                    <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}>
                       <Map size={16} className="mr-2" />
                       Open in Maps
                     </Button>
-                    <Button 
-                      size="sm" 
-                      className="bg-vacation-600 hover:bg-vacation-700 text-white"
-                      onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}
-                    >
+                    <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}>
                       <Map size={16} className="mr-2" />
                       Route from the airport
                     </Button>
@@ -225,11 +174,7 @@ const CheckIn = () => {
               </div>
             </GuidebookSection>
             
-            <GuidebookSection
-              title="Check-Out Details"
-              icon={<ArrowLeft size={20} />}
-              className="h-full"
-            >
+            <GuidebookSection title="Check-Out Details" icon={<ArrowLeft size={20} />} className="h-full">
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Check-Out Time</h3>
@@ -272,12 +217,7 @@ const CheckIn = () => {
             </GuidebookSection>
           </div>
           
-          <GuidebookSection
-            title="What's Included"
-            description="Everything provided for your comfort during your stay"
-            icon={<Package size={20} />}
-            className="mb-8"
-          >
+          <GuidebookSection title="What's Included" description="Everything provided for your comfort during your stay" icon={<Package size={20} />} className="mb-8">
             <div className="grid md:grid-cols-3 gap-6 mt-4">
               <div className="space-y-4">
                 <div className="flex items-center mb-2">
@@ -388,8 +328,6 @@ const CheckIn = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CheckIn;
