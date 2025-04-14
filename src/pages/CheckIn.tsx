@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
@@ -15,11 +16,28 @@ import {
   Map,
   Bed,
   Utensils,
-  Package
+  Package,
+  Image
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const CheckIn = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const lockboxImages = [
+    "/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png",
+    "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % lockboxImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + lockboxImages.length) % lockboxImages.length);
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -76,7 +94,7 @@ const CheckIn = () => {
             <div className="mt-6 bg-vacation-50 rounded-lg p-4">
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
-                <li>Mindful A/C Use: Enjoy a comfortable temperature, but please don’t leave it running when you're away.</li>
+                <li>Mindful A/C Use: Enjoy a comfortable temperature, but please don't leave it running when you're away.</li>
                 <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
@@ -129,7 +147,59 @@ const CheckIn = () => {
                   <h3 className="font-medium text-gray-800 mb-1">Self Check-In Process</h3>
                   <ol className="list-decimal ml-5 space-y-2 text-gray-600">
                     <li>If the gate is closed upon arrival, enter code <span className="font-semibold">23670#</span>.</li>
-                    <li>Access the lockbox using the code that has been/or will be provided (1 day before arrival).</li>
+                    <li>Access the lockbox using the code that has been/or will be provided (1 day before arrival). 
+                      <Dialog>
+                        <DialogTrigger>
+                          <Button variant="ghost" size="icon" className="ml-2 h-6 w-6 rounded-full">
+                            <Image size={16} className="text-vacation-600" />
+                            <span className="sr-only">View lockbox images</span>
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-md">
+                          <div className="relative">
+                            <img 
+                              src={lockboxImages[currentImageIndex]} 
+                              alt={`Lockbox image ${currentImageIndex + 1}`}
+                              className="w-full rounded-lg"
+                            />
+                            
+                            <div className="absolute inset-0 flex items-center justify-between">
+                              <Button 
+                                variant="outline" 
+                                size="icon" 
+                                className="rounded-full bg-black/20 backdrop-blur-sm text-white hover:bg-black/40 border-0"
+                                onClick={prevImage}
+                              >
+                                <ArrowLeft size={20} />
+                                <span className="sr-only">Previous image</span>
+                              </Button>
+                              
+                              <Button 
+                                variant="outline" 
+                                size="icon" 
+                                className="rounded-full bg-black/20 backdrop-blur-sm text-white hover:bg-black/40 border-0"
+                                onClick={nextImage}
+                              >
+                                <ArrowLeft size={20} className="rotate-180" />
+                                <span className="sr-only">Next image</span>
+                              </Button>
+                            </div>
+                            
+                            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                              <div className="flex space-x-2 bg-black/20 backdrop-blur-sm rounded-full px-3 py-1">
+                                {lockboxImages.map((_, index) => (
+                                  <div 
+                                    key={index} 
+                                    className={`w-2 h-2 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
+                                    onClick={() => setCurrentImageIndex(index)}
+                                  />
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </DialogContent>
+                      </Dialog>
+                    </li>
                     <li>Retrieve the front door key from the lockbox.</li>
                     <li>Return the key to the lockbox after your stay.</li>
                   </ol>
@@ -213,7 +283,7 @@ const CheckIn = () => {
             </GuidebookSection>
           </div>
           
-          {/* New What's Included Section */}
+          {/* What's Included Section */}
           <GuidebookSection
             title="What's Included"
             description="Everything provided for your comfort during your stay"
