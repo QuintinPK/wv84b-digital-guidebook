@@ -132,7 +132,7 @@ const CheckIn = () => {
                       Access the lockbox using the code that has been/or will be provided (1 day before arrival). 
                       <Dialog>
                         <DialogTrigger>
-                          <Button variant="ghost" className="ml-2 inline-flex items-center mx-0">
+                          <Button variant="ghost" className="ml-2 inline-flex items-center mx-0 bg-vacation-50 px-[7px] py-0 my-0">
                             <Camera size={16} className="text-vacation-600 mr-1" />
                             <span className="text-vacation-600 text-sm">View photo</span>
                           </Button>
