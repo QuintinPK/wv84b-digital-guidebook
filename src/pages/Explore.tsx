@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronRight, MapPin, Utensils, Waves, ArrowLeft, ShoppingBag } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -217,57 +216,6 @@ const Explore = () => {
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-6 pt-2">
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Seaside Bistro</h3>
-                      <p className="text-gray-600 mb-2">
-                        Fresh seafood and stunning ocean views just a 5-minute walk.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Dinner: 5pm-10pm daily
-                        </li>
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Reservations recommended
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Farm Table</h3>
-                      <p className="text-gray-600 mb-2">
-                        Farm-to-table restaurant featuring local produce and meats.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          Lunch and dinner
-                        </li>
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          15-minute drive
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h3 className="font-medium text-gray-900 mb-2">Morning Café</h3>
-                      <p className="text-gray-600 mb-2">
-                        Delicious breakfast and brunch options with outdoor seating.
-                      </p>
-                      <ul className="space-y-1 text-gray-600">
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          6am-2pm daily
-                        </li>
-                        <li className="flex items-center">
-                          <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                          10-minute walk
-                        </li>
-                      </ul>
-                    </div>
-                    
                     <div className="pt-3 border-t border-gray-200">
                       <p className="text-vacation-600">
                         <a 

@@ -9,8 +9,8 @@ const HouseManualSections = () => {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <InternetSection />
       <ClimateControlSection />
-      <HouseRulesSection />
       <GarbageRecyclingSection />
+      <HouseRulesSection className="lg:col-span-full bg-vacation-50 border-2 border-vacation-500" />
     </div>
   );
 };
