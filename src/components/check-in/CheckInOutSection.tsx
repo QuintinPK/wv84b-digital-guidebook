@@ -1,5 +1,5 @@
 
-import { Clock, Key, ArrowLeft } from "lucide-react";
+import { Clock, Key, ArrowLeft, Map as MapIcon } from "lucide-react";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -95,11 +95,11 @@ const CheckInOutSection = ({
               
               <div className="flex flex-col space-y-3">
                 <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}>
-                  <Map size={16} className="mr-2" />
+                  <MapIcon size={16} className="mr-2" />
                   Open in Maps
                 </Button>
                 <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}>
-                  <Map size={16} className="mr-2" />
+                  <MapIcon size={16} className="mr-2" />
                   Route from the airport
                 </Button>
               </div>
