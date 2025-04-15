@@ -10,6 +10,7 @@ import CheckIn from "./pages/CheckIn";
 import Explore from "./pages/Explore";
 import Contact from "./pages/Contact";
 import HouseManual from "./pages/HouseManual";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import BottomNavbar from "./components/BottomNavbar";
 
