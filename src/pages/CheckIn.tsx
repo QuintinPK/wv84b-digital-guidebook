@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Key, Clock, MapPin, ArrowLeft, Wifi, Thermometer, ShieldAlert, CarFront, Map, Bed, Utensils, Package, Image } from "lucide-react";
+import { Key, Clock, MapPin, ArrowLeft, Wifi, Thermometer, ShieldAlert, CarFront, Car, Map, Bed, Utensils, Package, Image } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
@@ -40,8 +40,8 @@ const CheckIn = () => {
               
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
-                  <MapPin size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">Getting Here</h3>
+                  <Car size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Getting here</h3>
                 </div>
                 <p className="text-gray-600 mb-2">
                   Kaya Watervillas 84 <br /><br />
