@@ -1,4 +1,3 @@
-
 import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -23,11 +22,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
                 <Link to="/house-manual" className="text-vacation-600 hover:text-vacation-800 transition-colors">
                   House Rules
                 </Link>
@@ -39,7 +33,7 @@ const Footer = () => {
             <h3 className="text-lg font-medium text-gray-900 mb-4">Connect with Us</h3>
             
             <p className="text-gray-600">
-              Email: contact@seasideserenitybonaire.com<br />
+              Email: <a href="mailto:contact@seasideserenitybonaire.com" className="text-vacation-600 hover:text-vacation-800 transition-colors">contact@seasideserenitybonaire.com</a><br />
               Phone: +599 795 1826
             </p>
           </div>
