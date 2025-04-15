@@ -1,13 +1,19 @@
 
 import { ChevronRight, Home } from "lucide-react";
 import GuidebookSection from "@/components/GuidebookSection";
+import { cn } from "@/lib/utils";
 
-const HouseRulesSection = () => {
+interface HouseRulesSectionProps {
+  className?: string;
+}
+
+const HouseRulesSection = ({ className }: HouseRulesSectionProps) => {
   return (
     <GuidebookSection
       title="House Rules"
       description="Important guidelines for your stay"
       icon={<Home size={24} />}
+      className={className}
     >
       <div className="space-y-1 text-gray-600">
         <li className="flex items-center">
