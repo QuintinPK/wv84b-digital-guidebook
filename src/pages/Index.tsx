@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -59,6 +58,34 @@ const Index = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link to="/checkin">
                 <GuidebookSection 
+                  title="Getting Here" 
+                  description="Directions and arrival information"
+                  icon={<MapPin size={24} />}
+                >
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Directions from airport
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Parking information
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Community gate access
+                    </li>
+                  </ul>
+                  <div className="mt-4">
+                    <Button variant="link" className="text-vacation-600 p-0 h-auto flex items-center">
+                      Read More <ChevronRight size={16} className="ml-1" />
+                    </Button>
+                  </div>
+                </GuidebookSection>
+              </Link>
+
+              <Link to="/checkin">
+                <GuidebookSection 
                   title="Check-In & Check-Out" 
                   description="Easy access instructions and departure information"
                   icon={<Clock size={24} />}
@@ -75,34 +102,6 @@ const Index = () => {
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
                       Check-out before 11:00 AM
-                    </li>
-                  </ul>
-                  <div className="mt-4">
-                    <Button variant="link" className="text-vacation-600 p-0 h-auto flex items-center">
-                      Read More <ChevronRight size={16} className="ml-1" />
-                    </Button>
-                  </div>
-                </GuidebookSection>
-              </Link>
-              
-              <Link to="/explore">
-                <GuidebookSection 
-                  title="Explore" 
-                  description="Discover attractions, dining, and beaches"
-                  icon={<MapPin size={24} />}
-                >
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center">
-                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Stunning beaches just a short drive away
-                    </li>
-                    <li className="flex items-center">
-                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Local dining recommendations
-                    </li>
-                    <li className="flex items-center">
-                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
-                      Nearby supermarkets 
                     </li>
                   </ul>
                   <div className="mt-4">
@@ -131,6 +130,34 @@ const Index = () => {
                     <li className="flex items-center">
                       <ChevronRight size={16} className="mr-2 text-vacation-500" />
                       Appliance guides and house rules
+                    </li>
+                  </ul>
+                  <div className="mt-4">
+                    <Button variant="link" className="text-vacation-600 p-0 h-auto flex items-center">
+                      Read More <ChevronRight size={16} className="ml-1" />
+                    </Button>
+                  </div>
+                </GuidebookSection>
+              </Link>
+              
+              <Link to="/explore">
+                <GuidebookSection 
+                  title="Explore" 
+                  description="Discover attractions, dining, and beaches"
+                  icon={<MapPin size={24} />}
+                >
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Stunning beaches just a short drive away
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Local dining recommendations
+                    </li>
+                    <li className="flex items-center">
+                      <ChevronRight size={16} className="mr-2 text-vacation-500" />
+                      Nearby supermarkets 
                     </li>
                   </ul>
                   <div className="mt-4">

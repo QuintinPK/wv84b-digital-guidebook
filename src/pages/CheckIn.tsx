@@ -22,7 +22,8 @@ const CheckIn = () => {
     setCurrentImageIndex(prev => (prev - 1 + lockboxImages.length) % lockboxImages.length);
   };
 
-  return <div className="min-h-screen flex flex-col">
+  return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-grow bg-gray-50 py-10 pb-20">
@@ -36,6 +37,26 @@ const CheckIn = () => {
           
           <GuidebookSection title="First Thing Upon Arrival" description="Important information to get you settled in" icon={<ShieldAlert size={20} />} className="mb-8">
             <div className="grid md:grid-cols-3 gap-6">
+              
+              <div className="border border-gray-100 rounded-lg p-4">
+                <div className="flex items-center mb-3">
+                  <MapPin size={20} className="text-vacation-600 mr-2" />
+                  <h3 className="font-medium text-gray-800">Getting Here</h3>
+                </div>
+                <p className="text-gray-600 mb-2">
+                  Kaya Watervillas 84 <br /><br />
+                </p>
+                <div className="flex flex-col space-y-3">
+                  <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/ERwpYVEs9uKZn8Ub9', '_blank')}>
+                    <Map size={16} className="mr-2" />
+                    Open in Maps
+                  </Button>
+                  <Button size="sm" className="bg-vacation-600 hover:bg-vacation-700 text-white" onClick={() => window.open('https://maps.app.goo.gl/VfAdWYULB9TYtB2j7', '_blank')}>
+                    <Map size={16} className="mr-2" />
+                    Route from the airport
+                  </Button>
+                </div>
+              </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
                 <div className="flex items-center mb-3">
@@ -58,15 +79,6 @@ const CheckIn = () => {
                     </DialogContent>
                   </Dialog>
                 </p>
-              </div>
-              
-              <div className="border border-gray-100 rounded-lg p-4">
-                <div className="flex items-center mb-3">
-                  <Wifi size={20} className="text-vacation-600 mr-2" />
-                  <h3 className="font-medium text-gray-800">WiFi Information</h3>
-                </div>
-                <p className="text-gray-600 mb-2">Network: <span className="font-bold">Ochenti4A</span></p>
-                <p className="text-gray-600 mb-2">Password: <span className="font-bold">WVOchenti4A</span></p>
               </div>
               
               <div className="border border-gray-100 rounded-lg p-4">
@@ -337,7 +349,8 @@ const CheckIn = () => {
       </main>
       
       <Footer />
-    </div>;
+    </div>
+  );
 };
 
 export default CheckIn;

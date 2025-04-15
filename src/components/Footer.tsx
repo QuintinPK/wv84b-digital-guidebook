@@ -1,4 +1,7 @@
-import { Heart, Instagram, Facebook, Twitter, MessageCircle } from "lucide-react";
+
+import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -15,24 +18,19 @@ const Footer = () => {
             <h3 className="text-lg font-medium text-gray-900 mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
+                <Link to="/terms" className="text-vacation-600 hover:text-vacation-800 transition-colors">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
+                <Link to="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
+                <Link to="/house-manual" className="text-vacation-600 hover:text-vacation-800 transition-colors">
                   House Rules
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-vacation-600 hover:text-vacation-800 transition-colors">
-                  Booking Information
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,4 +54,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

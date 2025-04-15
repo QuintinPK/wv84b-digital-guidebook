@@ -15,11 +15,11 @@ const InternetSection = () => {
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Network: Ochenti4A
+              Network: Kas Kanti Awa Arriba
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Password: WVOchenti4A
+              Password: #Watervillas84b
             </li>
           </ul>
         </div>

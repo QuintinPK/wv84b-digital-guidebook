@@ -40,7 +40,7 @@ const AppContent = () => {
         <Route path="/explore" element={<Explore />} />
         <Route path="/house-manual" element={<HouseManual />} />
         <Route path="/contact" element={<Contact />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <BottomNavbar />
