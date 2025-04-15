@@ -3,21 +3,25 @@ import Footer from "@/components/Footer";
 import GuidebookSection from "@/components/GuidebookSection";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Key, Clock, MapPin, ArrowLeft, Wifi, Thermometer, ShieldAlert, CarFront, Car, Map, Bed, Utensils, Package, Image } from "lucide-react";
+import { Key, Clock, MapPin, ArrowLeft, Wifi, Thermometer, ShieldAlert, CarFront, Car, Map, Bed, Utensils, Package, Image, MessageSquareWarning } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
 import { Camera } from "lucide-react";
+
 const CheckIn = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const lockboxImages = ["/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png", "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"];
   const gateKeypadImage = "/lovable-uploads/da9eaf81-9e05-4493-8ce0-8930a2be57e4.png";
+
   const nextImage = () => {
     setCurrentImageIndex(prev => (prev + 1) % lockboxImages.length);
   };
+
   const prevImage = () => {
     setCurrentImageIndex(prev => (prev - 1 + lockboxImages.length) % lockboxImages.length);
   };
+
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       
@@ -329,10 +333,13 @@ const CheckIn = () => {
               </div>
             </div>
             
-            <div className="mt-6 bg-vacation-50 p-4 rounded-lg">
-              <p className="text-gray-700 font-medium mb-2">Fresh bedding, bath towels, and beach towels will be provided once a week.</p>
-              <p className="text-gray-700 font-medium mb-2">Final cleaning is included in your stay. Want a little tidy-up halfway through? We can arrange that for an extra charge.</p>
-              <p className="text-gray-600">If there's something that's not on this list but you want to know if we've got it at the Villa, just contact us.</p>
+            <div className="mt-6 bg-vacation-50 p-4 rounded-lg flex items-center">
+              <MessageSquareWarning className="mr-3 text-vacation-600" size={24} />
+              <div>
+                <p className="text-gray-700 font-medium mb-2">Fresh bedding, bath towels, and beach towels will be provided once a week.</p>
+                <p className="text-gray-700 font-medium mb-2">Final cleaning is included in your stay. Want a little tidy-up halfway through? We can arrange that for an extra charge.</p>
+                <p className="text-gray-600">If there's something that's not on this list but you want to know if we've got it at the Villa, just contact us.</p>
+              </div>
             </div>
           </GuidebookSection>
         </div>
@@ -341,4 +348,5 @@ const CheckIn = () => {
       <Footer />
     </div>;
 };
+
 export default CheckIn;
