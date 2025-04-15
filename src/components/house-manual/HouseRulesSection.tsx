@@ -22,7 +22,7 @@ const HouseRulesSection = ({ className }: HouseRulesSectionProps) => {
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
-          Quiet hours from 11pm-7am
+          Quiet(er) hours from 10pm-7am
         </li>
         <li className="flex items-center">
           <ChevronRight size={16} className="mr-2 text-vacation-500" />
