@@ -7,6 +7,8 @@ import {
   Info,
   BookOpen,
   MapPin,
+  MapPinned,
+  Car,
   Clock,
   PhoneCall
 } from "lucide-react";
@@ -60,7 +62,7 @@ const Index = () => {
                 <GuidebookSection 
                   title="Getting Here" 
                   description="Directions and arrival information"
-                  icon={<MapPin size={24} />}
+                  icon={<Car size={24} />}
                 >
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
