@@ -8,22 +8,17 @@ import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useState } from "react";
 import { Camera } from "lucide-react";
-
 const CheckIn = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const lockboxImages = ["/lovable-uploads/a44e2698-9bed-4a06-acd9-be9227d39962.png", "/lovable-uploads/4a10cb66-e714-4e66-9131-ce0a9ebea25f.png"];
   const gateKeypadImage = "/lovable-uploads/da9eaf81-9e05-4493-8ce0-8930a2be57e4.png";
-
   const nextImage = () => {
     setCurrentImageIndex(prev => (prev + 1) % lockboxImages.length);
   };
-
   const prevImage = () => {
     setCurrentImageIndex(prev => (prev - 1 + lockboxImages.length) % lockboxImages.length);
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-grow bg-gray-50 py-10 pb-20">
@@ -92,7 +87,7 @@ const CheckIn = () => {
               <h3 className="font-medium text-gray-800 mb-2">Important Notes</h3>
               <ul className="list-disc ml-5 space-y-1 text-gray-600">
                 <li>Mindful A/C Use: Enjoy a comfortable temperature, but please don't leave it running when you're away.</li>
-                <li>Please be respectful of neighbors - keep noise to a minimum between 11:00 PM and 7:00 AM.</li>
+                <li>Please be respectful of neighbors - keep noise to a minimum between 10:00 PM and 7:00 AM.</li>
                 <li>Smoking is only allowed in outdoor areas, provided ashtrays are used. No open flames or candles indoors.</li>
                 <li>Pets are not permitted unless specifically arranged prior to booking.</li>
                 <li>Maximum occupancy is 4 guests. Unauthorized guests are not allowed.</li>
@@ -152,13 +147,11 @@ const CheckIn = () => {
                         <DialogContent className="sm:max-w-md">
                           <div className="relative">
                             <img src={lockboxImages[currentImageIndex]} alt={`Lockbox image ${currentImageIndex + 1}`} className="w-full rounded-lg" />
-                            {lockboxImages.length > 1 && (
-                              <div className="absolute inset-x-0 bottom-0 flex justify-center p-2 bg-black bg-opacity-50 rounded-b-lg">
+                            {lockboxImages.length > 1 && <div className="absolute inset-x-0 bottom-0 flex justify-center p-2 bg-black bg-opacity-50 rounded-b-lg">
                                 <Button variant="outline" size="sm" onClick={prevImage} className="mr-2">Previous</Button>
                                 <span className="text-white self-center">{currentImageIndex + 1}/{lockboxImages.length}</span>
                                 <Button variant="outline" size="sm" onClick={nextImage} className="ml-2">Next</Button>
-                              </div>
-                            )}
+                              </div>}
                           </div>
                         </DialogContent>
                       </Dialog>
@@ -345,8 +338,6 @@ const CheckIn = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CheckIn;
