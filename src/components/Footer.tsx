@@ -1,9 +1,6 @@
-
-import { Heart, Instagram, Facebook, Twitter, MessageCircle} from "lucide-react";
-
+import { Heart, Instagram, Facebook, Twitter, MessageCircle } from "lucide-react";
 const Footer = () => {
-  return (
-    <footer className="bg-white border-t">
+  return <footer className="bg-white border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -42,31 +39,7 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-medium text-gray-900 mb-4">Connect with Us</h3>
-            <div className="flex space-x-4 mb-4">
-              <a 
-                href="#" 
-                className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a 
-                href="#" 
-                className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a 
-
-                href="https://wa.me/5997951826" 
-                className="bg-vacation-100 hover:bg-vacation-200 text-vacation-600 rounded-full p-2 transition-colors"
-                aria-label="WhatsApp"
-                
-              >
-                <MessageCircle  size={20} />
-              </a>
-            </div>
+            
             <p className="text-gray-600">
               Email: contact@seasideserenitybonaire.com<br />
               Phone: +599 795 1826
@@ -81,8 +54,6 @@ const Footer = () => {
           <p className="mt-1">© {new Date().getFullYear()} Vacation Guide. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
