@@ -3,6 +3,7 @@ import InternetSection from "./InternetSection";
 import ClimateControlSection from "./ClimateControlSection";
 import HouseRulesSection from "./HouseRulesSection";
 import GarbageRecyclingSection from "./GarbageRecyclingSection";
+import PowerOutletsSection from "./PowerOutletsSection";
 
 const HouseManualSections = () => {
   return (
@@ -10,6 +11,7 @@ const HouseManualSections = () => {
       <InternetSection />
       <ClimateControlSection />
       <GarbageRecyclingSection />
+      <PowerOutletsSection />
       <HouseRulesSection className="lg:col-span-full bg-vacation-50 border-2 border-vacation-500" />
     </div>
   );
