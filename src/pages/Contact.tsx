@@ -52,7 +52,9 @@ const Contact = () => {
                     <PhoneCall size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Phone Number</h3>
-                      <p className="text-gray-600 mt-1">+599 795 1826</p>
+                      <a href="tel:+5997951826" className="text-vacation-600 hover:text-vacation-700 transition-colors mt-1 block">
+                        +599 795 1826
+                      </a>
                       <p className="text-sm text-gray-500 mt-1">Available 24/7 for urgent matters</p>
                     </div>
                   </div>
@@ -70,7 +72,9 @@ const Contact = () => {
                     <MessageCircle size={20} className="text-vacation-600 mr-3 mt-1" />
                     <div>
                       <h3 className="font-medium text-gray-800">Text Message/WhatsApp</h3>
-                      <p className="text-gray-600 mt-1">+599 795 1826</p>
+                      <a href="tel:+5997951826" className="text-vacation-600 hover:text-vacation-700 transition-colors mt-1 block">
+                        +599 795 1826
+                      </a>
                       <p className="text-sm text-gray-500 mt-1">Quickest way to reach us for non-emergencies</p>
                     </div>
                   </div>
@@ -86,22 +90,22 @@ const Contact = () => {
                 <div className="space-y-3 mt-2">
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
                     <span className="font-medium text-gray-900">Emergency Services</span>
-                    <span className="text-red-600 font-semibold">911</span>
+                    <a href="tel:911" className="text-red-600 font-semibold hover:text-red-700 transition-colors">911</a>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
                     <span className="font-medium text-gray-900">Police (Non-Emergency)</span>
-                    <span className="text-gray-700">717-8000</span>
+                    <a href="tel:7178000" className="text-gray-700 hover:text-gray-900 transition-colors">717-8000</a>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
                     <span className="font-medium text-gray-900">Ambulance (direct)</span>
-                    <span className="text-gray-700">912</span>
+                    <a href="tel:912" className="text-gray-700 hover:text-gray-900 transition-colors">912</a>
                   </div>
                   
                   <div className="flex justify-between items-center p-3 bg-white rounded border border-red-100">
                     <span className="font-medium text-gray-900">Coast guard</span>
-                    <span className="text-gray-700">913</span>
+                    <a href="tel:913" className="text-gray-700 hover:text-gray-900 transition-colors">913</a>
                   </div>
                 </div>
                 

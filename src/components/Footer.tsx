@@ -35,7 +35,7 @@ const Footer = () => {
             
             <p className="text-gray-600">
               Email: <a href="mailto:contact@seasideserenitybonaire.com" className="text-vacation-600 hover:text-vacation-800 transition-colors">contact@seasideserenitybonaire.com</a><br />
-              Phone: +599 795 1826
+              Phone: <a href="tel:+5997951826" className="text-vacation-600 hover:text-vacation-800 transition-colors">+599 795 1826</a>
             </p>
           </div>
         </div>

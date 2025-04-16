@@ -1,5 +1,7 @@
+
 import { ChevronRight, Thermometer } from "lucide-react";
 import GuidebookSection from "@/components/GuidebookSection";
+
 const ClimateControlSection = () => {
   return <GuidebookSection title="Temperature control" description="Instructions for the AC's and fan's" icon={<Thermometer size={24} />}>
       <div className="space-y-4">
@@ -26,15 +28,30 @@ const ClimateControlSection = () => {
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Use remote controls found in the living room and on the porch for the ceiling fans.
+              Two portable standing fans for flexible cooling
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              The bedrooms have standing fans that are operated manually
+              Easily movable to any desired location for convenient airflow
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-medium text-gray-900 mb-2">Power Outlets</h3>
+          <ul className="space-y-1 text-gray-600">
+            <li className="flex items-center">
+              <ChevronRight size={16} className="mr-2 text-vacation-500" />
+              Most power outlets in the house are 220V (European standard)
+            </li>
+            <li className="flex items-start">
+              <ChevronRight size={16} className="mr-2 mt-1 text-vacation-500" />
+              <span>No worries if you're bringing 110V (American standard) devices – we provide a few power converters/adapters so you can easily charge and use your electronics anywhere without a problem</span>
             </li>
           </ul>
         </div>
       </div>
     </GuidebookSection>;
 };
+
 export default ClimateControlSection;

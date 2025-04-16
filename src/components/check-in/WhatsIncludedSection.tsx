@@ -107,6 +107,10 @@ const WhatsIncludedSection = () => {
               <span className="text-vacation-600 mr-2">•</span>
               <span>Cooler</span>
             </li>
+            <li className="flex items-start">
+              <span className="text-vacation-600 mr-2">•</span>
+              <span>220V to 110V power adapters</span>
+            </li>
           </ul>
         </div>
       </div>
