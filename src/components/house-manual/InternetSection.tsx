@@ -29,7 +29,7 @@ const InternetSection = () => {
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
-              Access a variety of streaming apps, including Netflix, for entertainment
+              Access a variety of streaming apps, including Netflix
             </li>
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
