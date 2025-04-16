@@ -1,14 +1,7 @@
-
 import { ChevronRight, Thermometer } from "lucide-react";
 import GuidebookSection from "@/components/GuidebookSection";
-
 const ClimateControlSection = () => {
-  return (
-    <GuidebookSection
-      title="Temperature control"
-      description="Instructions for the AC's and fan's"
-      icon={<Thermometer size={24} />}
-    >
+  return <GuidebookSection title="Temperature control" description="Instructions for the AC's and fan's" icon={<Thermometer size={24} />}>
       <div className="space-y-4">
         <div>
           <h3 className="font-medium text-gray-900 mb-2">AC remote</h3>
@@ -29,7 +22,7 @@ const ClimateControlSection = () => {
         </div>
         
         <div>
-          <h3 className="font-medium text-gray-900 mb-2">(Ceiling) Fans</h3>
+          <h3 className="font-medium text-gray-900 mb-2">Fans</h3>
           <ul className="space-y-1 text-gray-600">
             <li className="flex items-center">
               <ChevronRight size={16} className="mr-2 text-vacation-500" />
@@ -42,8 +35,6 @@ const ClimateControlSection = () => {
           </ul>
         </div>
       </div>
-    </GuidebookSection>
-  );
+    </GuidebookSection>;
 };
-
 export default ClimateControlSection;
